@@ -278,3 +278,42 @@ runs on the node (Ex. python code) must run off-chain.</td>
     <td>CEU chooses and confirms which named accounts to delete</td>
   </tr>
 </table>
+
+<table>
+  <tr>
+    <td>2.1.7</td>
+    <td></td>
+  </tr>
+  
+   <tr>
+    <td>Name</td>
+    <td>View available offers to share health data</td>
+  </tr>
+  
+   <tr>
+    <td>Actors Involved</td>
+    <td>CEU</td>
+  </tr>
+  
+   <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, Research Health Offer Contract</td>
+  </tr>
+  
+   <tr>
+    <td>Preconditions</td>
+    <td>CEU has created or imported accounts, Researchers have posted offers for health data, CEU has answered basic questionnaire.</td>
+  </tr>
+  
+   <tr>
+    <td>Postconditions</td>
+    <td>Offers which match CEU’s profile are displayed.</td>
+   </tr>
+  <tr>
+  <td>Description of Workflow</td>
+  <td><br>1. Bowhead wallet queries Research Health Offer Contract hosted on Bowhead MasterNodes permissioned blockchain network.
+<br>2. Receives and processes the available offers and filters for offers that match the CEU’s profile and preferences.
+<br>3. matching offers are displayed.</td>
+  </tr>
+   
+ </table>
