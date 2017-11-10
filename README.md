@@ -395,27 +395,29 @@ MasterNode.
   </tr>
     <tr>
     <td>Name</td>
-    <td></td>
+    <td>Revoke ongoing access to health data</td>
   </tr>
     <tr>
     <td>Actors Involved</td>
-    <td></td>
+    <td>CEU</td>
   </tr>
     <tr>
     <td>Components Involved</td>
-    <td></td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, Health Record Registry Contract</td>
   </tr>
     <tr>
     <td>Preconditions</td>
-    <td></td>
+    <td>CEU has created or imported accounts into Bowhead Wallet, CEU has submitted test results or a questionnaire (has data to share), CEU has permitted another address to view the data.</td>
   </tr>
     <tr>
     <td>Postconditions</td>
-    <td></td>
+    <td>Data registered in CEU’s Health Record Registry Contract is set to EXPIRED</td>
   </tr>  
   <tr>
     <td>Description of Workflow</td>
-    <td></td>
+    <td>
+<br>1. Bowhead wallet sends a signed message to the Bowhead MasterNodes running the Health Record Registry Contract to revoke, or EXPIRE the relevant data.
+<br>2. Bowhead MasterNodes scan for changes to these contracts or for any data that is EXPIRED and deletes them from content addressable storage.</td>
   </tr>
   
  </table>
@@ -427,27 +429,32 @@ MasterNode.
   </tr>
     <tr>
     <td>Name</td>
-    <td></td>
+    <td>Pair with Bowhead Testing/Dispensing Hardware Device (key exchange)</td>
   </tr>
     <tr>
     <td>Actors Involved</td>
-    <td></td>
+    <td>CEU</td>
   </tr>
     <tr>
     <td>Components Involved</td>
-    <td></td>
+    <td>Bowhead Wallet, The Bowhead Testing/Dispensing Hardware Device, Health Record Registry Contract</td>
   </tr>
     <tr>
     <td>Preconditions</td>
-    <td></td>
+    <td>None</td>
   </tr>
     <tr>
     <td>Postconditions</td>
-    <td></td>
+    <td>The device running the Bowhead Wallet and The Bowhead Testing/Dispensing Hardware Device are paired, and information related to the pairing is remembered in the Bowhead Wallet local database.</td>
   </tr>  
   <tr>
     <td>Description of Workflow</td>
-    <td></td>
+    <td><br>1. Standard Pairing process (e.g. Bluetooth) using PIN for security (Ex. Bluetooth PIN)
+      <br>2. Bowhead Wallet stores The Bowhead Testing/Dispensing Hardware Device device
+fingerprint (Unique ID) in its local database.
+<br>3. Bowhead wallet updates CEU’s Health Record Registry Contract with new device
+fingerprint.
+</td>
   </tr>
   
  </table>
@@ -459,27 +466,29 @@ MasterNode.
   </tr>
     <tr>
     <td>Name</td>
-    <td></td>
+    <td>Submit test results from Bowhead Testing/Dispensing Hardware Device (paired)</td>
   </tr>
     <tr>
     <td>Actors Involved</td>
-    <td></td>
+    <td>CEU</td>
   </tr>
     <tr>
     <td>Components Involved</td>
-    <td></td>
+    <td>Bowhead Wallet, The Bowhead Testing/Dispensing Hardware Device, Bowhead MasterNodes, Health Record Registry Contract</td>
   </tr>
     <tr>
     <td>Preconditions</td>
-    <td></td>
+    <td>Device running Bowhead Wallet and The Bowhead Testing/Dispensing Hardware Device are paired, CEU has created or imported accounts into Bowhead Wallet, CEU has created Health Record Registry Contract</td>
   </tr>
     <tr>
     <td>Postconditions</td>
-    <td></td>
+    <td>Encrypted test results are stored on Bowhead MasterNode, Data is indexed in CEU’s Health Record Registry Contract.</td>
   </tr>  
   <tr>
     <td>Description of Workflow</td>
-    <td></td>
+    <td><br>1. Test results are dowloaded to Bowhead Wallet from paired The Bowhead Testing/ Dispensing Hardware Device.
+<br>2. Bowhead wallet encrypts the test results and sends it for storage on Bowhead MasterNode.
+<br>3. Bowhead wallet updates CEU’s Health Record Registry Contract with new record.</td>
   </tr>
   
  </table>
@@ -491,27 +500,27 @@ MasterNode.
   </tr>
     <tr>
     <td>Name</td>
-    <td></td>
+    <td>Send AHT</td>
   </tr>
     <tr>
     <td>Actors Involved</td>
-    <td></td>
+    <td>CEU</td>
   </tr>
     <tr>
     <td>Components Involved</td>
-    <td></td>
+    <td>Bowhead Wallet, decentralized nodes, AHT Contract</td>
   </tr>
     <tr>
     <td>Preconditions</td>
-    <td></td>
+    <td>CEU has created or imported accounts into Bowhead Wallet, CEU has a positive AHT balance, CEU has sufficient ETH balance to cover transaction (gas) cost, CEU has the Blockchain network address to which to send the AHT.</td>
   </tr>
     <tr>
     <td>Postconditions</td>
-    <td></td>
+    <td>Destination network address now has AHT allocated to it, original address has the amount subtracted.</td>
   </tr>  
   <tr>
     <td>Description of Workflow</td>
-    <td></td>
+    <td>Bowhead Wallet signs and broadcasts the transaction to the decentralized nodes of the blockchain network on which AHT are issued and traded</td>
   </tr>
   
  </table>
@@ -519,31 +528,27 @@ MasterNode.
   <table>
   <tr>
     <td>2.1.14</td>
-    <td></td>
+    <td>Receive AHT</td>
   </tr>
     <tr>
     <td>Name</td>
-    <td></td>
+    <td>CEU</td>
   </tr>
     <tr>
     <td>Actors Involved</td>
-    <td></td>
+    <td>Bowhead Wallet, decentralized nodes, AHT Contract</td>
   </tr>
     <tr>
     <td>Components Involved</td>
-    <td></td>
+    <td>CEU has created or imported accounts into Bowhead Wallet, AHT sender has CEU’s network address</td>
   </tr>
     <tr>
     <td>Preconditions</td>
-    <td></td>
+    <td>CEU’s address now has the AHT allocated to it.</td>
   </tr>
     <tr>
     <td>Postconditions</td>
-    <td></td>
-  </tr>  
-  <tr>
-    <td>Description of Workflow</td>
-    <td></td>
+    <td>CEU’s Bowhead wallet queries AHT Contract on decentralized nodes, retrieves and displays the updated balance.</td>
   </tr>
   
  </table>
@@ -555,27 +560,31 @@ MasterNode.
   </tr>
     <tr>
     <td>Name</td>
-    <td></td>
+    <td>Add an address as Authorized Data Custodian (ADC)</td>
   </tr>
     <tr>
     <td>Actors Involved</td>
-    <td></td>
+    <td>CEU, ADC</td>
   </tr>
     <tr>
     <td>Components Involved</td>
-    <td></td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, Health Record Registry Contract</td>
   </tr>
     <tr>
     <td>Preconditions</td>
-    <td></td>
+    <td>CEU and ADC have both created or imported accounts into Bowhead Wallet, CEU has submitted test results or a questionnaire (has data to share), CEU has ADC’s public key corresponding to the address with which they want to share.</td>
   </tr>
     <tr>
     <td>Postconditions</td>
-    <td></td>
+    <td>The specified data is stored on Bowhead MasterNodes decrypt-able by the specified private key, CEU’s Health Record Registry Contract is updated with new record and specifies a time limit.</td>
   </tr>  
   <tr>
     <td>Description of Workflow</td>
-    <td></td>
+    <td><br>1. ADC shares address with CEU
+<br>2. Bowhead Wallet encrypts the data using the public key corresponding to the
+address.
+<br>3. Newly encrypted file is uploaded encrypted with the public key
+<br>4. Data is registered in CEU’s Health Record Registry Contract as updated record.</td>
   </tr>
   
  </table>
