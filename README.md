@@ -47,7 +47,7 @@ November 8, 2017 Document Version: 1.0
 
 
 
-### 1. PREAMBLE
+## 1. PREAMBLE
 The purpose of this document is to formally gather and analyze the functional system requirements described by the “Bowhead Health For a Happier and Healthier World” document dated July 13th, 2017 V3.4 (hereafter “Bowhead Whitepaper") in addition to discussions with the Bowhead product design team. “
 As requirements specifications are evolving documents in response to a changing business requirements, no requirements specification is ever complete. However, this report makes every effort to capture the use cases and represents the best current understanding of the functional requirements implied by the Bowhead Whitepaper. The business case for the of the Bowhead Blockchain is described in the Bowhead Whitepaper.
 
@@ -62,7 +62,7 @@ Once technologies such as zk-snarks and zk-starks are fully vetted and field-tes
 Furthermore, any nodes, servers, computers, etc. that handle sensitive user data (any personal data, but especially confidential health data) must have in place industry best practice security measures similar to security measures taken on HIPPA compliant nodes.
 Finally, for additional security of the encrypted health data, records can be split into multiple “shards” which are independently encrypted.
 
-<h1>2. SCENARIOS - BRIEF USE CASE SUMMARY</h1>
+## 2. SCENARIOS - BRIEF USE CASE SUMMARY
 The Actors considered in this document are as follows:
 1. Consumer-End-User (CEU) - As the name suggests, this is the user that purchases the Bowhead Testing/ Dispensing Hardware Device, performs tests, submits data to research studies, stores their data on the Bowhead Network, receives and dispenses prescriptions.
 2. Researcher (RES) - Researchers interested in “Borrowing” health data for research in exchange for AHT. Once on-boarded and registered can post offerings for health data, pays, and receives the aggregated and anonymized data.
@@ -73,5 +73,7 @@ The Actors considered in this document are as follows:
 7. Bowhead Network Manager (BNM) - an Admin for Bowhead Health that manages the Permissioned Bowhead Blockchain and relevant Smart Contracts.
 8. Independent Ethics Committee Member (ECM) - In order to ensure that offers for health data made by researchers pass ethical review, all offers will be evaluated and approved by independent Independent Ethics Committee Members.
 9. Bowhead Blockchain Network Agent (BOW) - the collective action of the Bowhead Permissioned Blockchain can be characterized as an Agent for the purposes of issuing new AHT tokens, for example, this could take the form of an “Oracle” contract on the Blockchain Network where AHT tokens are traded (Such as Main Ethereum Public Network). Note: The collective action of the blockchain can be considered an actor in and of itself, such as when issuing new AHT tokens. This could take the form of an “Oracle” contract on the Blockchain Network where AHT tokens are traded (Such as Main Ethereum Public Network).
-<h3>USE CASES</h3>
-<h3>2.1 Consumer-End-User (CEU)</h3>
+
+# USE CASES
+
+### 2.1 Consumer-End-User (CEU)
