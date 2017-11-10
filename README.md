@@ -112,3 +112,45 @@ The Actors considered in this document are as follows:
   </tr>
   
 </table>
+
+<table>
+  <tr>
+    <td>2.1.2</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td>Convert WAVES token to Ethereum ERC-20 token</td>
+  </tr>
+  <tr>
+    <td>Actors Involved</td>
+    <td>CEU</td>
+  </tr>
+  <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Blockchain Network Bridge, AHT Contract</td>
+  </tr>
+  <tr>
+    <td>Preconditions</td>
+    <td>CEU has created Bowhead Blockchain Account/Address with Bowhead Wallet. CEU has Waves-based AHT on the Waves Blockchain, CEU has registered their Waves address with the AHT contract on the other blockchain (ex. Ethereum Main Public Network)</td>
+  </tr>
+  <tr>
+    <td>Postconditions</td>
+    <td>Same amount of AHT transferred from Waves blockchain is now in CEU’s registered Ethereum blockchain wallet.</td>
+  </tr>
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. User with Waves-based AHT registers their Waves account (public
+key) with Bowhead’s website (standard on-boarding) or Bowhead’s AHT contract for this purpose on the Ethereum Network. The latter option requires the user to
+hold/pay ETH for gas from their Bowhead wallet.
+<br>2. User with Waves-based AHT sends their AHT to a Bowhead-controlled
+Waves account. The Bowhead Blockchain Network Bridge that monitors the
+account notices the transaction, and initiates a looks up the User’s
+registered Ethereum address, and broadcasts a transaction on the
+Ethereum network to transfer the same number of AHT held in an
+Ethereum Smart Contract deployed on the Ethereum Main Public Network
+to the Ethereum address registered by the user in step 1. Bowhead
+would hold/pay ETH for gas to perform this transfer. Said code that
+runs on the node (Ex. python code) must run off-chain.</td>
+  </tr>
+</table>
