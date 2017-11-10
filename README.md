@@ -388,4 +388,487 @@ MasterNode.
   
  </table>
  
+  <table>
+  <tr>
+    <td>2.1.10</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td></td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td></td>
+  </tr>
+  
+ </table>
+ 
+  <table>
+  <tr>
+    <td>2.1.11</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td></td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td></td>
+  </tr>
+  
+ </table>
+ 
+  <table>
+  <tr>
+    <td>2.1.12</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td></td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td></td>
+  </tr>
+  
+ </table>
+ 
+  <table>
+  <tr>
+    <td>2.1.13</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td></td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td></td>
+  </tr>
+  
+ </table>
+ 
+  <table>
+  <tr>
+    <td>2.1.14</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td></td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td></td>
+  </tr>
+  
+ </table>
+ 
+  <table>
+  <tr>
+    <td>2.1.15</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td></td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td></td>
+  </tr>
+  
+ </table>
+ 
+  <table>
+  <tr>
+    <td>2.1.16</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>View categorized health records. Latest updates. Links to older versions. What is shared with whom for how long.</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>CEU</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, Health Record Registry Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>CEU has created or imported accounts into Bowhead Wallet, CEU has created Health Record Registry Contract, CEU has submitted test results or a questionnaire (has stored data)</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>The requested information is displayed for the CEU</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. Bowhead wallet sends a signed message to the Bowhead MasterNodes running the Health Record Registry Contract requesting the relevant information.
+<br>2. Bowhead wallet decrypts the relevant information.
+<br>3. Bowhead Wallet displays the relevant information for the CEU.</td>
+  </tr>
+  
+ </table>
+ 
+  <table>
+  <tr>
+    <td>2.1.17</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Permit listing of demographic and health data in aggregate (for researcher filtering)</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>CEU</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, Health Record Registry Contract, Research Health Offer Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>CEU has created or imported accounts into Bowhead Wallet, CEU has answered basic questionnaire. CEU has viewed available offers and agreed to share data for agreed upon compensation.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Encrypted, aggregated, and anonymized summaries are stored on Bowhead MasterNode. Health Record Registry Contract is updated on Bowhead MasterNodes. Research Health Offer Contract is updated with the CEU’s participation.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. Bowhead wallet queries Research Health Offer Contract on Bowhead Permissioned Blockchain for offer.
+<br>2. CEU agrees to provide data.
+<br>3. Bowhead wallet encrypts the results and sends it for storage on Bowhead
+MasterNode.
+<br>4. Bowhead wallet updates CEU’s Health Record Registry Contract with new record. 5. CEU’s address and data contribution recorded in Research Health Offer Contract
+<br>6. Bowhead MasterNode decrypts the data from all participating CEU’s, aggregates or
+otherwise analyzes the anonymous data, and encrypts the summarized data.</td>
+  </tr>
+  
+ </table>
+ 
+  <table>
+  <tr>
+    <td>2.1.18</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Accept available offer to share health data</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>CEU, RES</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, Health Record Registry Contract, Research Health Offer Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>CEU has created or imported accounts into Bowhead Wallet, CEU has answered basic questionnaire. RES has created an offer for health data. CEU has viewed available offers and agreed to share data for agreed upon compensation.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Encrypted, aggregated, and anonymized summaries are stored on Bowhead MasterNode, decrytpable with the RES private key. Health Record Registry Contract is updated on Bowhead MasterNodes. Research Health Offer Contract is updated with the CEU’s participation.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. Bowhead wallet queries Research Health Offer Contract on Bowhead Permissioned Blockchain for offer.
+<br>2. CEU agrees to provide data.
+<br>3. Bowhead wallet reads one-time encryption key from associated Research Health
+Offer Contract
+<br>4. Bowhead wallet encrypts the results with key from step 3 and sends data for storage
+on Bowhead MasterNode.
+<br>5. Bowhead wallet updates CEU’s Health Record Registry Contract with new record. 6. CEU’s address and data contribution recorded in Research Health Offer Contract
+<br>7. Bowhead MasterNode decrypts the data from all participating CEU’s, aggregates or
+otherwise analyzes the anonymous data, and encrypts the summarized data using the RES public key so that the RES private key can decrypt the result.</td>
+  </tr>
+  
+ </table>
+ 
+  <table>
+  <tr>
+    <td>2.1.19</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Enable automatic resupply of Vitamins</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>CEU</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, Health Record Registry Contract, Bowhead Testing/Dispensing Hardware Device</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>CEU has created or imported accounts into Bowhead Wallet, CEU has created a Health Record Registry Contact, and has paired with a Bowhead Testing/Dispensing Hardware Device</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Health Record Registry Contract is updated on Bowhead MasterNodes to enable automatic resupply of Vitamins</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. CEU clicks the appropriate button in the interface.
+<br>2. Bowhead wallet signs and broadcasts a transaction to the Bowhead Permissioned
+Blockchain in order to update the Research Health Offer Contract with the CEU’s preference.</td>
+  </tr>
+  
+ </table>
+ 
+  <table>
+  <tr>
+    <td>2.1.20</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Disable/Cancel automatic resupply of Vitamins</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>CEU</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, Health Record Registry Contract, Bowhead Testing/Dispensing Hardware Device</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>CEU has created or imported accounts into Bowhead Wallet, CEU has created a Health Record Registry Contact, and has paired with a Bowhead Testing/Dispensing Hardware Device</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Health Record Registry Contract is updated on Bowhead MasterNodes to enable automatic resupply of Vitamins</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. CEU clicks the appropriate button in the interface.
+<br>2. Bowhead wallet signs and broadcasts a transaction to the Bowhead Permissioned
+Blockchain in order to update the Research Health Offer Contract with the CEU’s preference.</td>
+  </tr>
+  
+ </table>
+ 
+  <table>
+  <tr>
+    <td>2.1.21</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Dispense Vitamins using paired Bowhead Testing/Dispensing Hardware Device</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>CEU, BHC, HCW</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, Health Record Registry Contract, Bowhead Testing/Dispensing Hardware Device</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>
+CEU has created or imported accounts into Bowhead Wallet, CEU has created a Health Record Registry Contact, and has paired with a Bowhead Testing/Dispensing Hardware Device, A prescription has been added to the Health Record Registry Contact by an BHC or HCW</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Vitamins are dispensed, the Health Record Registry Contract is updated on Bowhead MasterNodes with the remaining Vitamin count in the Bowhead Testing/Dispensing Hardware as well as the relevant prescription has been filled.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. CEU clicks the appropriate button in the interface.
+<br>2. Bowhead Wallet checks the Health Record Registry Contract to ensure that the
+Bowhead Testing/Dispensing Hardware is authorized to dispense the requested
+vitamins.
+<br>3. Bowhead wallet signs and broadcasts a transaction to the Bowhead Permissioned
+Blockchain in order to update the Research Health Offer Contract with the CEU’s preference.</td>
+  </tr>
+  
+ </table>
+ 
+  <table>
+  <tr>
+    <td>2.1.22</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>User Views Remaining Vitamin Count</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>CEU</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, Health Record Registry Contract, Bowhead Testing/Dispensing Hardware Device</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>
+CEU has created or imported accounts into Bowhead Wallet, CEU has created a Health Record Registry Contact, and has paired with a Bowhead Testing/Dispensing Hardware Device.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>The remaining vitamin count is displayed.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td>
+<br>1. CEU clicks the appropriate button in the interface.
+<br>2. If the paired Bowhead Testing/Dispensing Hardware Device is currently connected,
+retrieve the current remaining vitamin count from the device.
+<br>3. If it is not currently connected, i.e. out of range, the current vitamin remaining count is
+queried from the Health Record Registry Contract</td>
+  </tr>
+  
+ </table>
+ 
+  <table>
+  <tr>
+    <td>2.1.23</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>User deletes all health records.</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>CEU, BHC, HCW</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, Health Record Registry Contract, Bowhead Storage Node</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>CEU has created or imported accounts into Bowhead Wallet, CEU has created a Health Record Registry Contact, and has paired with a Bowhead Testing/Dispensing Hardware Device</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>All health records and data related to the users’s address is deleted from all Storage Nodes, Health Record Registry Contract is emptied of all personal information, however the account remains to ensure that any related files are deleted if later found by an offline node. Local Bowhead Wallet database is purged of any data related to the account.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. CEU clicks the appropriate button in the interface.
+<br>2. Bowhead Wallet sends a signed transaction to the Health Record Registry Contract
+to delete all the users’ data and health records 
+      <br>3. Bowhead Wallet deletes all data locally.</td>
+  </tr>
+  
+ </table>
+ 
  
