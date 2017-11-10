@@ -77,3 +77,38 @@ The Actors considered in this document are as follows:
 # USE CASES
 
 ### 2.1 Consumer-End-User (CEU)
+
+<table>
+  <tr>
+    <td>2.1.1</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td>Create Bowhead Blockchain Account/Address (public/private key-pairs on each Permissioned / Decentralized AHT Blockchains)</td>
+  </tr>
+  <tr>
+    <td>Actors Involved</td>
+    <td>CEU</td>
+  </tr>
+  <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, Health Record Registry Contract, Bowhead Edge Node, AHT Contract</td>
+  </tr>
+  <tr>
+    <td>Preconditions</td>
+    <td>None</td>
+  </tr>
+  <tr>
+    <td>Postconditions</td>
+    <td>Bowhead Wallet has public-private keypair, associated with Health Record Registry Contract corresponding to that user, and AHT Contract</td>
+  </tr>
+  <tr>
+    <td>Description of Workflow</td>
+    <td>1. User generates public/private key pair for the Bowhead permissioned network of MasterNodes.
+2. A transaction signed with said key is broadcast to the Bowhead MasterNodes, either directly or through Bowhead Edge Node to create an on-chain Health Record Registry Contract
+3. A second public/private key pair (account) is created for the Blockchain network on which AHT is issued and traded.
+4. The accounts on both networks are associated within a Health Record Registry Contract on the permissioned Bowhead MasterNode Blockchain</td>
+  </tr>
+  
+</table>
