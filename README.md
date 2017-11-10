@@ -216,3 +216,65 @@ runs on the node (Ex. python code) must run off-chain.</td>
     <td>User pastes or otherwise provides the public and private keys, and allows the user to name the account (see: Name/Rename public/private keypair)</td>
   </tr>
 </table>
+
+<table>
+  <tr>
+    <td>2.1.5</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td>Name/Rename public/private keypair (public/private key-pairs on each Permissioned / Decentralized AHT Blockchains)</td>
+  </tr>
+  <tr>
+    <td>Actors Involved</td>
+    <td>CEU</td>
+  </tr>
+  <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet</td>
+  </tr>
+  <tr>
+    <td>Preconditions</td>
+    <td>CEU has created or imported accounts</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Selected accounts have their display names changed</td>
+  </tr>
+    <tr>
+    <td>Description of Workflow</td>
+    <td>The display name of the key pair is changed in the local wallet database.</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td>2.1.6</td>
+    <td></td>
+  </tr>
+   <tr>
+    <td>Name</td>
+    <td>Delete public/private keypair (public/private key-pairs on each Permissioned / Decentralized AHT Blockchains)</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>CEU</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>CEU has created or imported accounts</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Selected Accounts are deleted from the local database</td>
+  </tr>
+    <tr>
+    <td>Description of Workflow</td>
+    <td>CEU chooses and confirms which named accounts to delete</td>
+  </tr>
+</table>
