@@ -317,3 +317,41 @@ runs on the node (Ex. python code) must run off-chain.</td>
   </tr>
    
  </table>
+ 
+ <table>
+  <tr>
+    <td>2.1.8</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Answer a health survey/questionnaire</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>CEU</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, Health Record Registry Contract, Research Health Offer Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>CEU has created or imported accounts into Bowhead Wallet, Researchers have posted offers for health data, CEU has answered basic questionnaire. CEU has viewed available offers and selected a questionnaire to answer.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Encrypted results are stored on Bowhead MasterNode, Data is indexed in CEU’s Health Record Registry Contract.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. Bowhead wallet queries Research Health Offer Contract on Bowhead Permissioned Blockchain for survey questions.
+<br>2. User answers questionnaire.
+<br>3. Bowhead wallet encrypts the results and sends it for storage on Bowhead
+MasterNode.
+<br>4. Bowhead wallet updates CEU’s Health Record Registry Contract with new record. 5. CEU’s address and data contribution recorded in Research Health Offer Contract</td>
+  </tr>
+  
+ </table>
+ 
+ 
