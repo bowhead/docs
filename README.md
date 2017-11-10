@@ -354,4 +354,38 @@ MasterNode.
   
  </table>
  
+ <table>
+  <tr>
+    <td>2.1.9</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Permit an address to view a subset of health data (categories, and time limits)</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>CEU</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, Health Record Registry Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>CEU has created or imported accounts into Bowhead Wallet, CEU has submitted test results or a questionnaire (has data to share), CEU has the public key corresponding to the address with which they want to share.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>The specified data is stored on Bowhead MasterNodes decrypt-able by the specified private key, CEU’s Health Record Registry Contract is updated with new record and specifies a time limit.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1.Bowhead Wallet encrypts the data using the public key corresponding to the address. 
+      <br>2.Newly encrypted file is uploaded encrypted with the public key
+<br>3.Data is registered in CEU’s Health Record Registry Contract with new record and specifies a time limit</td>
+  </tr>
+  
+ </table>
+ 
  
