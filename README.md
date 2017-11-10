@@ -185,3 +185,34 @@ runs on the node (Ex. python code) must run off-chain.</td>
     <td>Wallet queries the relevant blockchain for the AHT balance associated with the CEU’s Account/Address, the account balance is displayed.</td>
   </tr>
 </table>
+
+<table>
+  <tr>
+    <td>2.1.4</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td>Import public/private key pair (public/private key-pairs on each Permissioned / Decentralized AHT Blockchains)</td>
+  </tr>
+  <tr>
+    <td>Actors Involved</td>
+    <td>CEU</td>
+  </tr>
+  <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet</td>
+  </tr>
+  <tr>
+    <td>Preconditions</td>
+    <td>None</td>
+  </tr>
+  <tr>
+    <td>Postconditions</td>
+    <td>Bowhead Wallet is configured with the imported public/private key pair.</td>
+  </tr>
+  <tr>
+    <td>Description of Workflow</td>
+    <td>User pastes or otherwise provides the public and private keys, and allows the user to name the account (see: Name/Rename public/private keypair)</td>
+  </tr>
+</table>
