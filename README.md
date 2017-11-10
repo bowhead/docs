@@ -156,32 +156,32 @@ runs on the node (Ex. python code) must run off-chain.</td>
 </table>
 
 <table>
-  <tr>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
+ <tr>
+    <td>2.1.3</td>
     <td></td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td>Name</td>
+    <td>Check AHT Balance</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td>Actors Involved</td>
+    <td>CEU</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, AHT Contract</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td>Preconditions</td>
+    <td>CEU has created Bowhead Blockchain Account/Address with Bowhead Wallet</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td>Postconditions</td>
+    <td>AHT balance is displayed</td>
+  </tr>
+  <tr>
+    <td>Description of Workflow</td>
+    <td>Wallet queries the relevant blockchain for the AHT balance associated with the CEU’s Account/Address, the account balance is displayed.</td>
   </tr>
 </table>
