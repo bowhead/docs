@@ -1192,3 +1192,243 @@ using the private key stored in the Bowhead Wallet 4. Aggregate data is displaye
  </table>
  
   
+  <table>
+  <tr>
+    <td>2.3.1</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Create Bowhead Blockchain Account/Address (public/private keypair)</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>LAB</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, Bowhead Edge Node, LAB Registry Contract, AHT Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>None</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Bowhead Wallet has public-private keypair, associated with LAB Registry Contract corresponding to that user, and AHT Contract</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. Bowhead Wallet generates public/private key pair for the Bowhead permissioned network of MasterNodes.
+<br>2. Bowhead Wallet generates a second public/private key pair (account) for the Blockchain network on which AHT is issued and traded.
+<br>3. The accounts on both networks are associated within a LAB Registry Contract on the permissioned Bowhead MasterNode Blockchain</td>
+  </tr>
+  
+ </table>
+ 
+ <table>
+  <tr>
+    <td>2.3.2</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Register With Bowhead Health (On-Boarding)</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>LAB</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, LAB Registry Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>Created Bowhead Blockchain Account/Address (public/private keypair)</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>LAB is registered and permitted to process samples</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. LAB uses Bowhead Wallet to submit account and other information to BNM.
+<br>2. Standard on-boarding process.
+<br>3. If successful, BNM registers LAB with LAB Registry Contract which permits LAB to process test samples and authorize LAB to upload results</td>
+  </tr>
+  
+ </table>
+ 
+ <table>
+  <tr>
+    <td>2.3.3</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Check AHT Balance</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>LAB</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, AHT Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>LAB has created Bowhead Blockchain Account/Address with Bowhead Wallet</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>AHT balance is displayed</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td>Wallet queries the relevant blockchain for the AHT balance associated with the LAB’s Account/Address, the account balance is displayed.</td>
+  </tr>
+  
+ </table>
+ 
+ <table>
+  <tr>
+    <td>2.3.4</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Offer to Process sample</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>LAB</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, LAB Registry Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>LAB is registered and permitted to process samples.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>LAB has test sample data decrypted.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. LAB sends offer to Bowhead MasterNodes to process samples for a particular rate in AHT.
+<br>2. Bowhead MasterNodes check LAB Registry Contract to ensure that LAB is authorized.
+<br>3. Bowhead MasterNodes encrypt test sample data using key stored in LAB Registry Contract, also providing CEU’s public key with which to encrypt the LAB’s results once ready.
+<br>4. LAB is notified through LAB Registry Contract
+<br>5. LAB confirms through LAB Registry Contract
+<br>6. LAB downloads and decrypts the test sample data.
+<br>7. (optional) LAB receives physical samples corresponding to test sample data</td>
+  </tr>
+  
+ </table>
+ 
+ <table>
+  <tr>
+    <td>2.3.5</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Submit test results to Bowhead master node</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>LAB</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, LAB Registry Contract, Blockchain Network Bridge, Health Record Registry Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>LAB has accepted sample test data to process, and has results to submit. LAB has CEU’s public key with which to encrypt the test results.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Test results are encrypted with CEU’s public key and are stored on Bowhead MasterNodes. CEU has been notified of test result availability through the corresponding Health Record Registry Contract.
+LAB has been paid AHT.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. LAB encrypts test results using CEU’s public key.
+<br>2. LAB uploads encrypted test results to Bowhead MasterNode.
+<br>3. Bowhead MasterNodes check LAB Registry Contract to ensure that LAB is
+authorized.
+<br>4. Bowhead MasterNode writes to CEU’s Health Record Registry Contract to notify
+them of the test results.
+<br>5. LAB is sent AHT issued by Bowhead MasterNode via Blockchain Network Bridge.</td>
+  </tr>
+  
+ </table>
+ 
+ <table>
+  <tr>
+    <td>2.3.6</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Receive AHT</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>LAB</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, decentralized nodes, AHT Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>LAB has created or imported accounts into Bowhead Wallet, AHT sender has LAB’s network address</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>LAB’s address now has the AHT allocated to it.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td>LAB’s Bowhead wallet queries AHT Contract on decentralized nodes, retrieves and displays the updated balance.</td>
+  </tr>
+  
+ </table>
+ 
+ <table>
+  <tr>
+    <td>2.3.7</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Send AHT</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>LAB</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, decentralized nodes, AHT Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>LAB has created or imported accounts into Bowhead Wallet, LAB has a positive AHT balance, LAB has sufficient ETH balance to cover transaction (gas) cost, LAB has the Blockchain network address to which to send the AHT.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Destination network address now has AHT allocated to it, original address has the amount subtracted.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td>Bowhead Wallet signs and broadcasts the transaction to the decentralized nodes of the blockchain network on which AHT are issued and traded</td>
+  </tr>
+  
+ </table>
