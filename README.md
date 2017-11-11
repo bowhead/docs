@@ -880,4 +880,315 @@ to delete all the users’ data and health records
   
  </table>
  
+ ### 2.2 Researcher (RES)
  
+ <table>
+  <tr>
+    <td>2.2.1</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Create Bowhead Blockchain Account/Address (public/private keypair)</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>RES</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, Bowhead Edge Node, Researcher Registry Contract, AHT Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>None</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Bowhead Wallet has public-private keypair, associated with Researcher Registry Contract corresponding to that user, and AHT Contract</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. Bowhead Wallet generates public/private key pair for the Bowhead permissioned network of MasterNodes.
+<br>2. Bowhead Wallet generates a second public/private key pair (account) for the Blockchain network on which AHT is issued and traded.
+<br>3. The accounts on both networks are associated within a Researcher Registry Contract on the permissioned Bowhead MasterNode Blockchain</td>
+  </tr>
+  
+ </table>
+ 
+  <table>
+  <tr>
+    <td>2.2.2</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Register With Bowhead Health (On-Boarding)</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>RES</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>Created Bowhead Blockchain Account/Address (public/private keypair)</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>RES is registered and permitted to post new Research Health Offer Contracts</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. RES uses Bowhead Wallet to submit account and other information to BNM.
+<br>2. Standard on-boarding process.
+<br>3. If successful, BNM registers RES with Researcher Registry Contract which permits RES to post new Research Health Offer Contracts</td>
+  </tr>
+  
+ </table>
+ 
+  <table>
+  <tr>
+    <td>2.2.3</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Check AHT Balance</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>RES</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, AHT Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>RES has created Bowhead Blockchain Account/Address with Bowhead Wallet</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>AHT balance is displayed</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td>Wallet queries the relevant blockchain for the AHT balance associated with the RES’s Account/Address, the account balance is displayed.</td>
+  </tr>
+  
+ </table>
+ 
+  <table>
+  <tr>
+    <td>2.2.4</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Create offer for health data</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>RES, ECM</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, AHT Contract, Bowhead MasterNodes, Researcher Registry Contract, Research Health Offer Contract, Blockchain Network Bridge</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>RES has created Bowhead Blockchain Account/Address with Bowhead Wallet, RES has been onboard-ed and is permitted to create Research Health Offer Contracts, RES has sufficient AHT to stake and/or pay fees to create said Research Health Offer Contract</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Research Health Offer Contract is deployed and searchable.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. RES signs and submits Research Health Offer Contract to Bowhead MasterNodes with sufficient AHT escrow stake and fees.
+<br>2. MasterNodes check Researcher Registry Contract to ensure that RES is authorized, and also that the submitted Research Health Offer Contract is valid.
+<br>3. If permitted and valid, the Research Health Offer Contract is reviewed by ECM.
+<br>4. If ethics review is successful, MasterNodes enable Research Health Offer Contract
+verifying that AHT placed in escrow (see: Put AHT into escrow Use Case, below).</td>
+  </tr>
+  
+ </table>
+ 
+  <table>
+  <tr>
+    <td>2.2.5</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Put AHT into escrow</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>RES</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, AHT Contract, Bowhead MasterNodes, Researcher Registry Contract, Research Health Offer Contract, Blockchain Network Bridge</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>RES has created Bowhead Blockchain Account/Address with Bowhead Wallet, RES has been onboard-ed and is permitted to create Research Health Offer Contracts, RES has sufficient AHT to place into escrow.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Research Health Offer Contract has requisite AHT to compensate participants.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. RES signs and submits transaction committing sufficient AHT to an address corresponding to the Research Health Offer Contract within the AHT token contract on the blockchain network on which AHT are issued and traded.
+<br>2. MasterNodes use Blockchain Network Bridge to verify AHT has been placed in escrow in the AHT token contract.
+<br>3. MasterNodes permit Research Health Offer Contract to be published.</td>
+  </tr>
+  
+ </table>
+ 
+  <table>
+  <tr>
+    <td>2.2.6</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Receive anonymized and/or aggregated dataset</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>RES</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, Blockchain Network Bridge, AHT Contract, Research Health Offer Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>Conditions within the Research Health Offer Contract are met (i.e. sufficient participants or time have elapsed)</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>The specified data is aggregated by Bowhead MasterNodes and made available to RES decrypt-able by the RES’s specified private key, AHT Contract on decentralized network is updated via Blockchain Network Bridge such that the AHT can be distributed as indicated on the next distribution period.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. Elected Bowhead MasterNode generates a one-time-key which CEU participants use to encrypt data they are contributing under the terms of the Research Health Offer Contract.
+<br>2. The public side of the one-time-key is published using the Research Health Offer Contract.
+<br>3. CEU’s download and decrypt their data, then encrypt their data with the one-time- key.
+<br>4. CEU’s upload the encrypted data to Bowhead MasterNodes.
+<br>5. Once conditions to close the submission window are met (as set forth in Research
+Health Offer Contract) the elected Bowhead MasterNode decrypts all participant’s data, performs the requisite aggregation and anonymization, and encrypts the resulting data using RES’s public key stored in the Research Health Offer Contract.
+<br>6. RES downloads the encrypted data from Bowhead MasterNodes and decrypts it using the private key stored in the Bowhead Wallet.
+<br>7. Bowhead MasterNode via Blockchain Network Bridge updates AHT Contract on decentralized network permitting escrowed AHT to be distributed as indicated on the next distribution period.</td>
+  </tr>
+  
+ </table>
+ 
+  <table>
+  <tr>
+    <td>2.2.7</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Send AHT</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>RES</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, decentralized nodes, AHT Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>RES has created or imported accounts into Bowhead Wallet, RES has a positive AHT balance, RES has sufficient ETH balance to cover transaction (gas) cost, RES has the Blockchain network address to which to send the AHT.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Destination network address now has AHT allocated to it, original address has the amount subtracted.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td>Bowhead Wallet signs and broadcasts the transaction to the decentralized nodes of the blockchain network on which AHT are issued and traded</td>
+  </tr>
+  
+ </table>
+ 
+  <table>
+  <tr>
+    <td>2.2.8</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Receive AHT</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>RES</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, decentralized nodes, AHT Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>RES has created or imported accounts into Bowhead Wallet, AHT sender has RES’s network address</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>RES’s address now has the AHT allocated to it.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td>RES’s Bowhead wallet queries AHT Contract on decentralized nodes, retrieves and displays the updated balance.</td>
+  </tr>
+  
+ </table>
+ 
+  <table>
+  <tr>
+    <td>2.2.9</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>View Aggregate Profiles</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>RES</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>RES has created Bowhead Blockchain Account/Address with Bowhead Wallet, RES has been onboard-ed and is permitted to create Research Health Offer Contracts, CEUs have shared aggregate profile data.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>The specified data is aggregated by Bowhead MasterNodes and made available to RES decrypt-able by the RES’s specified private key, the aggregate data is displayed to RES.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. RES requests the aggregated profile data from Bowhead MasterNodes.
+<br>2. Bowhead MasterNode, and encrypts aggregated profile data using RES’s public key
+stored in the Researcher Registry Contract.
+<br>3. RES downloads the encrypted data from Bowhead MasterNodes and decrypts it
+using the private key stored in the Bowhead Wallet 4. Aggregate data is displayed to the RES.</td>
+  </tr>
+  
+ </table>
+ 
+  
