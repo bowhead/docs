@@ -1890,3 +1890,442 @@ and also the new account.
   </tr>
   
  </table>
+ 
+ 
+ ## 2.7 Bowhead Network Manager (BNM)
+ 
+<table>
+  <tr>
+    <td>2.7.1</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Update Smart Contracts</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>BNM</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead MasterNode</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>One or more Smart Contracts are published on the permissioned Bowhead Blockchain</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>State or code of the Smart contracts is changed on the permissioned Bowhead Blockchain. This functionality can be used to remove spam accounts or contracts.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. BNM broadcasts a signed transaction to the Bowhead MasterNodes.
+<br>2. The change is reflected in the next block.</td>
+  </tr>
+  
+ </table>
+
+<table>
+  <tr>
+    <td>2.7.2</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Deploy New Smart Contracts</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>BNM</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead MasterNode</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>Code for Smart Contract is available.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Smart Contract code is deployed on the permissioned Bowhead Blockchain.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. BNM broadcasts a signed transaction to the Bowhead MasterNodes.
+<br>2. The contract is deployed in the next block.</td>
+  </tr>
+  
+ </table>
+<table>
+  <tr>
+    <td>2.7.3</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Share health data with another account (if authorized by owner for recovery purposes)</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>BNM</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Health Record Registry Contract, Bowhead MasterNode</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>Bowhead (BNM) has been authorized as a Data Custodian in CEU’s Health Record Registry Contract, BNM has CEU’s public key through Health Record Registry Contract. BNM has determined through an off-chain process that it’s in the owner’s best interest to share the data with another account whose public key is provided. ADC has downloaded and decrypted the relevant health records.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>New health records are stored on Bowhead MasterNode encrypted with BNM’s and any other public keys BNM has deemed it necessary to share the records with. CEU’s Health Record Registry Contract is updated with new health records.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. BNM requests CEU’s public encryption key from Health Record Registry Contract
+<br>2. BNM encrypts the new record so that it can be decrypted by all the previous keys
+and also the new account.
+<br>3. BNM sends the newly encrypted file to Bowhead MasterNode.
+<br>4. Bowhead MasterNode ensures that the BNM is authorized to make changes.
+<br>5. The new settings are applied in the Health Record Registry Contract</td>
+  </tr>
+  
+ </table>
+<table>
+  <tr>
+    <td>2.7.4</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Approve Labs</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>BNM, LAB</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead MasterNode, LAB Registry Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>LAB has Created Bowhead Blockchain Account/Address, LAB has passed through off- chain on-boarding process.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>LAB Registry Contract is created and associated with the LAB’s public-private key pair.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. BNM broadcasts a signed transaction to the Bowhead MasterNodes.
+<br>2. The new LAB Registry Contract is included in the next block.
+<br>3. The LAB’s account on the permissioned Bowhead Blockchain is associated with the
+account provided to the AHT Contract</td>
+  </tr>
+  
+ </table>
+<table>
+  <tr>
+    <td>2.7.5</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Approve Researchers</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>BNM, RES</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead MasterNode, Researcher Registry Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>RES has Created Bowhead Blockchain Account/Address, RES has passed through off- chain on-boarding process.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Researcher Registry Contract is created and associated with the RES’s public-private key pair.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. BNM broadcasts a signed transaction to he Bowhead MasterNodes.
+<br>2. The new Researcher Registry Contract is included in the next block.
+<br>3. The RES’s account on the permissioned Bowhead Blockchain is associated with the
+account provided to the AHT Contract</td>
+  </tr>
+  
+ </table>
+<table>
+  <tr>
+    <td>2.7.6</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Approve BHC</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>BNM, BHC</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead MasterNode, Health Consultant Registry Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>BHC has Created Bowhead Blockchain Account/Address, BHC has passed through off- chain on-boarding process.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Health Consultant Registry Contract is created and associated with the BHC’s public- private key pair.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. BNM broadcasts a signed transaction to he Bowhead MasterNodes.
+<br>2. The new Health Consultant Registry Contract is included in the next block.
+<br>3. The BHC’s account on the permissioned Bowhead Blockchain is associated with the
+account provided to the AHT Contract</td>
+  </tr>
+  
+ </table>
+<table>
+  <tr>
+    <td>2.7.7</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Add Bowhead MasterNode to group (permissioned Blockchain)</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>BNM</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead MasterNode, Key Management Module</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>The new Bowhead MasterNode has generated a public-private key pair, and has shared with with BNM</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>The new Bowhead MasterNode’s public key is added to the list of keys that can decrypt the permissioned blockchain in the Key Management Module</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td>1. BNM updates Key Management Module to add the new public key</td>
+  </tr>
+  
+ </table>
+<table>
+  <tr>
+    <td>2.7.8</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Remove Bowhead MasterNode from group (permissioned Blockchain)</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>BNM</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead MasterNode, Key Management Module</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>The Bowhead MasterNode’s public key was previously added to the list of keys that can decrypt the permissioned blockchain in the Key Management Module</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>The Bowhead MasterNode’s public key is removed to the list of keys that can decrypt the permissioned blockchain in the Key Management Module i.e. revoked</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td>1. BNM updates Key Management Module to remove or revoke the public key</td>
+  </tr>
+  
+ </table>
+<table>
+  <tr>
+    <td>2.7.9</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Appoint ECM members</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>BNM, ECM</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead MasterNode, Ethics Committee Registry Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>ECM has Created Bowhead Blockchain Account/Address, ECM has passed through off- chain on-boarding process.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>ECM’s public-private key pair is registered with the Ethics Committee Registry Contract.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. BNM broadcasts a signed transaction to the Bowhead MasterNodes.
+<br>2. The updates to the Ethics Committee Registry Contract are included in the next
+block.
+<br>3. The ECM’s account on the permissioned Bowhead Blockchain is associated with the
+account provided to the AHT Contract</td>
+  </tr>
+  
+ </table>
+<table>
+  <tr>
+    <td>2.7.10</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Remove (revoke membership of) ECM members</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>BNM, ECM</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead MasterNode, Ethics Committee Registry Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>ECM’s public-private key pair is registered with the Ethics Committee Registry Contract.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>ECM’s public-private key pair is removed from the Ethics Committee Registry Contract.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. BNM broadcasts a signed transaction to the Bowhead MasterNodes.
+<br>2. The removal of the ECM from the Ethics Committee Registry Contract is reflected in
+the next block.</td>
+  </tr>
+  
+ </table>
+<table>
+  <tr>
+    <td>2.7.11</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Create Bowhead Questionnaire</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>BNM, ECM</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead MasterNodes, Research Health Offer Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>Questionnaire is defined (ready to be published).</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Bowhead’s questionnaire is deployed as a Research Health Offer Contract is deployed and searchable on the permissioned Bowhead Blockchain.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. BNM signs and submits Research Health Offer Contract to Bowhead MasterNodes.. 
+      <br>2. Research Health Offer Contract is reviewed by ECM.
+      <br>3. If ethics review is successful, MasterNodes publish Research Health Offer Contract in
+the next block.</td>
+  </tr>
+  
+ </table>
+<table>
+  <tr>
+    <td>2.7.12</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Modify Bowhead Questionnaire</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>BNM, ECM</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead MasterNodes, Research Health Offer Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>Bowhead’s questionnaire is deployed as a Research Health Offer Contract is deployed and searchable on the permissioned Bowhead Blockchain.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Research Health Offer Contract is updated on the permissioned Bowhead Blockchain.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. BNM signs and submits Research Health Offer Contract to Bowhead MasterNodes.. 
+      <br>2. Modifications to Research Health Offer Contract are reviewed by ECM.
+<br>3. If ethics review is successful, MasterNodes publish Research Health Offer Contract in
+the next block.</td>
+  </tr>
+  
+ </table>
+<table>
+  <tr>
+    <td>2.7.13</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Remove Bowhead Questionnaire</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>BNM</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead MasterNodes, Research Health Offer Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>Bowhead’s questionnaire is deployed as a Research Health Offer Contract is deployed and searchable on the permissioned Bowhead Blockchain.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Research Health Offer Contract is updated on the permissioned Bowhead Blockchain.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td>
+    <br>1. BNM signs and submits Research Health Offer Contract to Bowhead MasterNodes..<br> 2. Modifications to Research Health Offer Contract are reviewed by ECM.
+<br>3. If ethics review is successful, MasterNodes publish Research Health Offer Contract in the next block.
+    </td>
+  </tr>
+  
+ </table>
