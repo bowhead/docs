@@ -1437,7 +1437,7 @@ them of the test results.
 
   <table>
   <tr>
-    <td>2.4.</td>
+    <td>2.4.1</td>
     <td></td>
   </tr>
     <tr>
@@ -1464,6 +1464,82 @@ them of the test results.
     <td>Description of Workflow</td>
     <td>1. Bowhead Wallet generates public/private key pair for the Bowhead permissioned
 network of MasterNodes. </td>
+  </tr>
+  
+ </table>
+ 
+<table>
+  <tr>
+    <td>2.4.2</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>View decrypted health data</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>HCW</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>Bowhead Wallet, Health Record Registry Contract, Bowhead MasterNode</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>HCW permitted in CEU’s Health Record Registry Contract, CEU’s authorized health
+records are encrypted with HCW’s public key so they can decrypt it.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. HCW requests records from Bowhead MasterNode
+<br>2. Bowhead MasterNode checks Health Record Registry Contract whether HCW is
+authorized.
+<br>3. If so, Bowhead MasterNode permits download of encrypted health data.
+<br>4. HCW’s Bowhead Wallet decrypts the health data using HCW’s private key.
+<br>5. Decrypted health records (data) are displayed for HCW.</td>
+  </tr>
+  
+ </table>
+ 
+ <table>
+  <tr>
+    <td>2.4.3</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Add a health record</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>HCW</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Health Record Registry Contract, Bowhead MasterNode</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>HCW permitted in CEU’s Health Record Registry Contract, HCW has CEU’s public key
+through Health Record Registry Contract. HCW has updated health data or records to
+share with CEU.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>New health records are stored on Bowhead MasterNode encrypted with CEU’s public
+key. Health Record Registry Contract is updated with new health records</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. HCW requests CEU’s public encryption key from Health Record Registry Contract
+<br>2. HCW encrypts the new record and sends it to Bowhead MasterNode.
+<br>3. Bowhead MasterNode ensures that the HCW is authorized to make changes.
+<br>4. The new record is listed in the Health Record Registry Contract</td>
   </tr>
   
  </table>
