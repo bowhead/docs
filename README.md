@@ -1006,7 +1006,7 @@ to delete all the users’ data and health records
     <tr>
     <td>Postconditions</td>
     <td>Research Health Offer Contract is deployed and searchable.</td>
-  </tr>  
+  </tr>
   <tr>
     <td>Description of Workflow</td>
     <td><br>1. RES signs and submits Research Health Offer Contract to Bowhead MasterNodes with sufficient AHT escrow stake and fees.
@@ -1429,6 +1429,38 @@ them of the test results.
   <tr>
     <td>Description of Workflow</td>
     <td>Bowhead Wallet signs and broadcasts the transaction to the decentralized nodes of the blockchain network on which AHT are issued and traded</td>
+  </tr>
+  
+ </table>
+ 
+  <table>
+  <tr>
+    <td>2.4.</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td></td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td></td>
   </tr>
   
  </table>
