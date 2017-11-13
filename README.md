@@ -202,7 +202,7 @@ runs on the node (Ex. python code) must run off-chain.</td>
   <tr>
     <td>Components Involved</td>
     <td>Bowhead Wallet</td>
-  </tr>
+  </tr>
   <tr>
     <td>Preconditions</td>
     <td>None</td>
@@ -214,7 +214,7 @@ runs on the node (Ex. python code) must run off-chain.</td>
   <tr>
     <td>Description of Workflow</td>
     <td>User pastes or otherwise provides the public and private keys, and allows the user to name the account (see: Name/Rename public/private keypair)</td>
-  </tr>
+  </tr>
 </table>
 
 <table>
@@ -1540,6 +1540,238 @@ key. Health Record Registry Contract is updated with new health records</td>
 <br>2. HCW encrypts the new record and sends it to Bowhead MasterNode.
 <br>3. Bowhead MasterNode ensures that the HCW is authorized to make changes.
 <br>4. The new record is listed in the Health Record Registry Contract</td>
+  </tr>
+  
+ </table>
+ 
+ 
+ ## 2.5 Bowhead Health Consultant (BHC)
+ 
+  <table>
+  <tr>
+    <td>2.5.1</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Create Bowhead Blockchain Account/Address (public/private keypair)</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>BHC</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, Bowhead Edge Node, Health Consultant
+Registry Contract, AHT Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>None</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Bowhead Wallet has public-private keypair, associated with Health Consultant Registry
+Contract corresponding to that user, and AHT Contract</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. Bowhead Wallet generates public/private key pair for the Bowhead permissioned
+network of MasterNodes.
+<br>2. Bowhead Wallet generates a second public/private key pair (account) for the
+Blockchain network on which AHT is issued and traded.
+<br>3. The accounts on both networks are associated within a Health Consultant Registry
+Contract on the permissioned Bowhead MasterNode Blockchain </td>
+  </tr>
+  
+ </table>
+ 
+   <table>
+  <tr>
+    <td>2.5.2</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Register With Bowhead Health (On-Boarding)</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>BHC</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, Health Consultant Registry Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>Created Bowhead Blockchain Account/Address (public/private keypair)</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>BHC is registered and permitted to provide diagnosis & prescriptions</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. BHC uses Bowhead Wallet to submit account and other information to BNM.
+<br>2. Standard on-boarding process.
+<br>3. If successful, BNM registers BHC with Health Consultant Registry Contract which
+permits BHC to upload diagnosis & prescriptions encrypted under CEU’s public key. </td>
+  </tr>
+  
+ </table>
+ 
+   <table>
+  <tr>
+    <td>2.5.3</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>View decrypted health data</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>BHC</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, Health Consultant Registry Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>Health Consultant is registered and permitted to provide diagnosis & prescriptions.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>BHC has authorized, relevant, health data decrypted.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. BHC sends offer to Bowhead MasterNodes to process samples for a particular rate
+in AHT.
+<br>2. Bowhead MasterNodes check Health Consultant Registry Contract to ensure that
+Health Consultant is authorized.
+<br>3. Bowhead MasterNodes encrypt test sample data using key stored in Health
+Consultant Registry Contract, also providing CEU’s public key with which to encrypt
+the BHC’s diagnosis & prescriptions once ready.
+<br>4. BHC is notified through Health Consultant Registry Contract
+<br>5. BHC confirms through Health Consultant Registry Contract
+<br>6. BHC downloads and decrypts the test sample data.
+<br>7. BHC views the test sample data.</td>
+  </tr>
+  
+ </table>
+ 
+   <table>
+  <tr>
+    <td>2.5.4</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Receive AHT</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>BHC</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, decentralized nodes, AHT Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>BHC has created or imported accounts into Bowhead Wallet, AHT sender has BHC’s
+network address</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>BHC’s address now has the AHT allocated to it.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td>BHC’s Bowhead wallet queries AHT Contract on decentralized nodes, retrieves and
+displays the updated balance.</td>
+  </tr>
+  
+ </table>
+ 
+   <table>
+  <tr>
+    <td>2.5.5</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Send AHT</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>BHC</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, decentralized nodes, AHT Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>BHC has created or imported accounts into Bowhead Wallet, BHC has a positive AHT
+balance, BHC has sufficient ETH balance to cover transaction (gas) cost, BHC has the
+Blockchain network address to which to send the AHT.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Destination network address now has AHT allocated to it, original address has the
+amount subtracted.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td>Bowhead Wallet signs and broadcasts the transaction to the decentralized nodes of the
+blockchain network on which AHT are issued and traded</td>
+  </tr>
+  
+ </table>
+ 
+   <table>
+  <tr>
+    <td>2.5.6</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Submit diagnosis / prescription</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>BHC</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, Health Consultant Registry Contract,
+Blockchain Network Bridge, Health Record Registry Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>BHC has accepted sample test data to analyze, and has diagnosis / prescription to
+submit. BHC has CEU’s public key with which to encrypt the test results.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Diagnosis / prescription are encrypted with CEU’s public key and are stored on Bowhead
+MasterNodes. CEU has been notified of test result availability through the corresponding
+Health Record Registry Contract.
+BHC has been paid AHT.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. BHC encrypts diagnosis / prescription using CEU’s public key.
+<br>2. BHC uploads encrypted diagnosis / prescription to Bowhead MasterNode.
+<br>3. Bowhead MasterNodes check BHC Registry Contract to ensure that BHC is
+authorized.
+<br>4. Bowhead MasterNode writes to CEU’s Health Record Registry Contract to notify
+them of the diagnosis / prescription.
+<br>5. BHC is sent AHT issued by Bowhead MasterNode via Blockchain Network Bridge.</td>
   </tr>
   
  </table>
