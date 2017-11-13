@@ -6,7 +6,7 @@
 
 <h3>Functional Requirements Document</h3>
 
-##BOWHEAD BLOCKCHAIN
+## BOWHEAD BLOCKCHAIN
 
 November 8, 2017 Document Version: 1.0
 
@@ -1432,7 +1432,9 @@ them of the test results.
   </tr>
   
  </table>
-## 2.4 Authorized Healthcare Worker (HCW) 
+ 
+## 2.4 Authorized Healthcare Worker (HCW)
+
   <table>
   <tr>
     <td>2.4.</td>
