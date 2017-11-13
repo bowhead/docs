@@ -1775,3 +1775,118 @@ them of the diagnosis / prescription.
   </tr>
   
  </table>
+ 
+ ## 2.6 Authorized Data Custodian (ADC)
+ 
+ 
+ <table>
+  <tr>
+    <td>2.6.1</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Create Bowhead Blockchain Account/Address (public/private keypair)</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>ADC</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>None</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Bowhead Wallet has public-private keypair.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td>1. Bowhead Wallet generates public/private key pair for the Bowhead permissioned
+network of MasterNodes. </td>
+  </tr>
+  
+ </table>
+ 
+  <table>
+  <tr>
+    <td>2.6.2</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>View decrypted health data</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>ADC</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Health Record Registry Contract, Bowhead MasterNode</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>ADC permitted in CEU’s Health Record Registry Contract, CEU’s authorized health
+records are encrypted with ADC’s public key so they can decrypt it.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>ADC has access to authorized decrypted health data.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. ADC requests records from Bowhead MasterNode
+<br>2. Bowhead MasterNode checks Health Record Registry Contract whether ADC is
+authorized.
+<br>3. If so, Bowhead MasterNode permits download of encrypted health data.
+<br>4. ADC’s Bowhead Wallet decrypts the health data using ADC’s private key.
+<br>5. Decrypted health records (data) are displayed for ADC.</td>
+  </tr>
+  
+ </table>
+ 
+  <table>
+  <tr>
+    <td>2.6.3</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Share health data with another account</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>ADC</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Health Record Registry Contract, Bowhead MasterNode</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>ADC permitted in CEU’s Health Record Registry Contract, ADC has CEU’s public key
+through Health Record Registry Contract. ADC has a new account with which to share
+CEU’s data. ADC has downloaded and decrypted the relevant health records.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>New health records are stored on Bowhead MasterNode encrypted with ADC’s and any
+other public keys ADC has decided to share the records with. Health Record Registry
+Contract is updated with new health records.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td><br>1. ADC requests CEU’s public encryption key from Health Record Registry Contract
+<br>2. ADC encrypts the new record so that it can be decrypted by all the previous keys
+and also the new account.
+<br>3. ADC sends the newly encrypted file to Bowhead MasterNode.
+<br>4. Bowhead MasterNode ensures that the ADC is authorized to make changes.
+<br>5. The new settings are applied in the Health Record Registry Contract</td>
+  </tr>
+  
+ </table>
