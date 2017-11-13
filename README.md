@@ -1432,7 +1432,7 @@ them of the test results.
   </tr>
   
  </table>
- 
+## 2.4 Authorized Healthcare Worker (HCW) 
   <table>
   <tr>
     <td>2.4.</td>
@@ -1440,27 +1440,28 @@ them of the test results.
   </tr>
     <tr>
     <td>Name</td>
-    <td></td>
+    <td>Create Bowhead Blockchain Account/Address (public/private keypair)</td>
   </tr>
     <tr>
     <td>Actors Involved</td>
-    <td></td>
+    <td>HCW</td>
   </tr>
     <tr>
     <td>Components Involved</td>
-    <td></td>
+    <td>Bowhead Wallet</td>
   </tr>
     <tr>
     <td>Preconditions</td>
-    <td></td>
+    <td>None</td>
   </tr>
     <tr>
     <td>Postconditions</td>
-    <td></td>
+    <td>Bowhead Wallet has public-private keypair.</td>
   </tr>  
   <tr>
     <td>Description of Workflow</td>
-    <td></td>
+    <td>1. Bowhead Wallet generates public/private key pair for the Bowhead permissioned
+network of MasterNodes. </td>
   </tr>
   
  </table>
