@@ -2595,6 +2595,6 @@ Although not strictly required for a functional requirements specification docum
 
 
 
-# Figure 1. System diagram depicting relationships between System Components in Section 5
+### Figure 1. System diagram depicting relationships between System Components in Section 5
 
 Note that the overall architecture permits extensions by addition of new module types to Bowhead Master Nodes, as well as additional services such as full supply chain traceability through the Blockchain Network Bridge interface. The overall system is split into a Permissioned side and Decentralized, or public blockchain side. The permissioned side exists so that in the early epoch of the Bowhead health ecosystem, in order to safeguard the security and privacy of consumer end user data, only Nodes added to the Key Management Module by the
