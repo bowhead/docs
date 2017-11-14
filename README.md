@@ -2549,3 +2549,52 @@ ECM is authorized.
  
  
  ## 2.9 Bowhead Blockchain Network Agent (BOW)
+ 
+ <table>
+  <tr>
+    <td>2.9.1</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Issue new AHT Tokens (Bitcoin distribution model)</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>The Bowhead Blockchain Itself (BOW)</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>decentralized nodes, AHT Contract, Bowhead MasterNodes, Oracle Process, Researcher Registry Contract, LAB Registry Contract, Health Consultant Registry Contract, Ethics Committee Registry Contract, Research Health Offer Contract, and Health Record Registry Contracts</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>Oracle process is running on elected Bowhead MasterNode, AHT distribution period has elapsed.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>AHT are issued to the Bowhead Wallet addresses as set forth by the oracle.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td>
+      1. Oracle process running on elected Bowhead MasterNode continually scans Researcher Registry Contract, LAB Registry Contract, Health Consultant Registry Contract, Ethics Committee Registry Contract, Research Health Offer Contract, and Health Record Registry Contracts for activity and accounts for all AHT to be issued and transferred.
+<br>2. Oracle process running on elected Bowhead MasterNode observes the time, and decides that the epoch has ended and that it’s time for an AHT issuance to be performed.
+<br>3. Based on the current epoch emission schedule, and accounting of all AHT to be issued and transferred Oracle uses Blockchain Network Bridge to issue AHT transactions on the AHT Contract (deployed on the decentralized network where AHT are issued and traded).
+    </td>
+  </tr>
+  
+ </table>
+ 
+ 
+ 
+## 3. SYSTEM DIAGRAM AND ECOSYSTEM DISCUSSION
+
+
+Although not strictly required for a functional requirements specification document, this figure summarizes the relationships between the components described in the following section.
+
+
+
+# Figure 1. System diagram depicting relationships between System Components in Section 5
+
+Note that the overall architecture permits extensions by addition of new module types to Bowhead Master Nodes, as well as additional services such as full supply chain traceability through the Blockchain Network Bridge interface. The overall system is split into a Permissioned side and Decentralized, or public blockchain side. The permissioned side exists so that in the early epoch of the Bowhead health ecosystem, in order to safeguard the security and privacy of consumer end user data, only Nodes added to the Key Management Module by the
