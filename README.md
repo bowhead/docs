@@ -6,7 +6,7 @@
 
 <h3>Functional Requirements Document</h3>
 
-## BOWHEAD BLOCKCHAIN
+# BOWHEAD BLOCKCHAIN
 
 November 8, 2017 Document Version: 1.0
 
@@ -1191,6 +1191,7 @@ using the private key stored in the Bowhead Wallet 4. Aggregate data is displaye
   
  </table>
  
+ ### 2.3 Laboratory (LAB)
   
   <table>
   <tr>
@@ -1433,7 +1434,7 @@ them of the test results.
   
  </table>
  
-## 2.4 Authorized Healthcare Worker (HCW)
+### 2.4 Authorized Healthcare Worker (HCW)
 
   <table>
   <tr>
@@ -1545,7 +1546,7 @@ key. Health Record Registry Contract is updated with new health records</td>
  </table>
  
  
- ## 2.5 Bowhead Health Consultant (BHC)
+ ### 2.5 Bowhead Health Consultant (BHC)
  
   <table>
   <tr>
@@ -1776,7 +1777,7 @@ them of the diagnosis / prescription.
   
  </table>
  
- ## 2.6 Authorized Data Custodian (ADC)
+ ### 2.6 Authorized Data Custodian (ADC)
  
  
  <table>
@@ -1892,7 +1893,7 @@ and also the new account.
  </table>
  
  
- ## 2.7 Bowhead Network Manager (BNM)
+ ### 2.7 Bowhead Network Manager (BNM)
  
 <table>
   <tr>
@@ -2331,7 +2332,7 @@ the next block.</td>
  </table>
  
  
- ## 2.8 Independent Ethics Committee Member (ECM)
+ ### 2.8 Independent Ethics Committee Member (ECM)
  
  <table>
   <tr>
@@ -2548,7 +2549,7 @@ ECM is authorized.
  </table>
  
  
- ## 2.9 Bowhead Blockchain Network Agent (BOW)
+ ### 2.9 Bowhead Blockchain Network Agent (BOW)
  
  <table>
   <tr>
