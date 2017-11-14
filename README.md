@@ -2332,3 +2332,220 @@ the next block.</td>
  
  
  ## 2.8 Independent Ethics Committee Member (ECM)
+ 
+ <table>
+  <tr>
+    <td>2.8.1</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>View Research Health Offer Contracts under review</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>ECM</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, Research Health Offer Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>ECM has created or imported accounts, Researchers have submitted Research Health Offer Contracts for review.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Research Health Offer Contracts presently under review are displayed.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td>
+      1. ECM’s Bowhead wallet queries Research Health Offer Contracts hosted on Bowhead MasterNodes permissioned blockchain network.
+<br>2. Bowhead Wallet Receives and displays Research Health Offer Contracts presently under review.
+    </td>
+  </tr>
+  
+ </table>
+ 
+ <table>
+  <tr>
+    <td>2.8.2</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Register With Bowhead Health (On-Boarding)</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>ECM</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, Ethics Committee Registry Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>ECM has Created Bowhead Blockchain Account/Address (public/private keypair)</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>ECM is registered and permitted to approve or deny Research Health Offer Contracts</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td>
+      1. ECM uses Bowhead Wallet to submit account and other information to BNM.
+<br>2. Standard on-boarding process.
+<br>3. If successful, BNM registers ECM with Ethics Committee Registry Contract which permits ECM to approve or deny Research Health Offer Contracts.
+    </td>
+  </tr>
+  
+ </table>
+ 
+ <table>
+  <tr>
+    <td>2.8.3</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Submit approval/denial for Research Health Offer Contracts</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>ECM</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, Ethics Committee Registry Contract, Research Health Offer Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>ECM is registered and permitted to approve or deny Research Health Offer Contracts. ECM has viewed Research Health Offer Contracts under review, and has selected one to review.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Research Health Offer Contract is approved or denied.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td>
+      1. ECM composes and signs a message approving or denying the Research Health Offer Contracts on the basis of ethics.
+<br>2. ECM’s Bowhead Wallet broadcasts the message to Bowhead MasterNodes
+<br>3. Bowhead MasterNodes check Ethics Committee Registry Contract to ensure that
+ECM is authorized.
+<br>4. Bowhead MasterNodes enable the Ethics Committee Registry Contract if approved.
+<br>5. ECM is sent AHT issued by Bowhead MasterNode via Blockchain Network Bridge.
+    </td>
+  </tr>
+  
+ </table>
+ 
+ <table>
+  <tr>
+    <td>2.8.4</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Create Bowhead Blockchain Account/Address (public/private keypair)</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>ECM</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, Bowhead MasterNodes, Bowhead Edge Node, Ethics Committee Registry Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>None</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Bowhead Wallet has public-private keypair, associated with Ethics Committee Registry Contract corresponding to that user, and AHT Contract</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td>
+      1. Bowhead Wallet generates public/private key pair for the Bowhead permissioned network of MasterNodes.
+<br>2. Bowhead Wallet generates a second public/private key pair (account) for the Blockchain network on which AHT is issued and traded.
+<br>3. The accounts on both networks are associated within a Ethics Committee Registry Contract on the permissioned Bowhead MasterNode Blockchain
+    </td>
+  </tr>
+  
+ </table>
+ 
+ <table>
+  <tr>
+    <td>2.8.5</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Receive AHT</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>ECM</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, decentralized nodes, AHT Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>ECM has created or imported accounts into Bowhead Wallet, AHT sender has ECM’s network address</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>ECM’s address now has the AHT allocated to it.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td>
+      ECM’s Bowhead wallet queries AHT Contract on decentralized nodes, retrieves and displays the updated balance.
+    </td>
+  </tr>
+  
+ </table>
+ 
+ <table>
+  <tr>
+    <td>2.8.6</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Name</td>
+    <td>Send AHT</td>
+  </tr>
+    <tr>
+    <td>Actors Involved</td>
+    <td>ECM</td>
+  </tr>
+    <tr>
+    <td>Components Involved</td>
+    <td>Bowhead Wallet, decentralized nodes, AHT Contract</td>
+  </tr>
+    <tr>
+    <td>Preconditions</td>
+    <td>ECM has created or imported accounts into Bowhead Wallet, ECM has a positive AHT balance, ECM has sufficient ETH balance to cover transaction (gas) cost, ECM has the Blockchain network address to which to send the AHT.</td>
+  </tr>
+    <tr>
+    <td>Postconditions</td>
+    <td>Destination network address now has AHT allocated to it, original address has the amount subtracted.</td>
+  </tr>  
+  <tr>
+    <td>Description of Workflow</td>
+    <td>
+      Bowhead Wallet signs and broadcasts the transaction to the decentralized nodes of the blockchain network on which AHT are issued and traded
+    </td>
+  </tr>
+  
+ </table>
+ 
+ 
+ ## 2.9 Bowhead Blockchain Network Agent (BOW)
