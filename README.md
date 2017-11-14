@@ -12,10 +12,10 @@ November 8, 2017 Document Version: 1.0
 
 
 
-- [1.Preamble](#preamble)
-  - [1.2 GOALS](#goals)
-  - [1.3 RECOMMENDATIONS](#recomendations)
-- [2. Scenarios - Brief Use Case Summary USE CASES](#)
+- [1.Preamble](#1-preamble)
+  - [1.2 GOALS](#11-goals)
+  - [1.3 RECOMMENDATIONS](#13-recommendations)
+- [2. Scenarios - Brief Use Case Summary USE CASES](#2-scenarios---brief-use-case-summary)
   - [2.1 CONSUMER-END-USER (CEU)](#)
   - [2.2 RESEARCHER (RES)](#)
   - [2.3 LABORATORY (LAB)](#)
