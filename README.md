@@ -1,6 +1,6 @@
 ￼<h1 align="center">
   <a href="ipfs.io">
-    <img src="" alt="Bowhead in JavaScript logo" />
+    <img src="https://ipfs.io/ipfs/QmU2ZSzXyzVfoYLZe2hJYX4iKZBMPKGN8XQGc1afWBr6m2" alt="Bowhead in JavaScript logo" />
   </a>
 </h1>
 
@@ -2593,6 +2593,8 @@ ECM is authorized.
 
 
 Although not strictly required for a functional requirements specification document, this figure summarizes the relationships between the components described in the following section.
+
+<img src="https://ipfs.io/ipfs/QmQsCVypni6gdRGWsEvxfxACgDv3p8xRxQwURUrRhi7FaN" alt="" />
 
 
 
