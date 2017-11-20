@@ -1,6 +1,6 @@
 ￼<h1 align="center">
   <a href="ipfs.io">
-    <img src="https://ipfs.io/ipfs/QmU2ZSzXyzVfoYLZe2hJYX4iKZBMPKGN8XQGc1afWBr6m2" alt="Bowhead in JavaScript logo" />
+    <img src="https://ipfs.io/ipfs/QmU2ZSzXyzVfoYLZe2hJYX4iKZBMPKGN8XQGc1afWBr6m2"  />
   </a>
 </h1>
 
