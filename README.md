@@ -2639,50 +2639,50 @@ Device
 the local database
 
 
-(xix) Complete Waves AHT wallet features (Check balance, buy, sell, trade, send AHT)- deprecated; eventual phase out once migration off the Waves platform is complete (xx) Ethereum wallet functionality for transacting on the Ethereum network (Read ETH
+<br>(xix) Complete Waves AHT wallet features (Check balance, buy, sell, trade, send AHT)- deprecated; eventual phase out once migration off the Waves platform is complete (xx) Ethereum wallet functionality for transacting on the Ethereum network (Read ETH
 balance, Send, Receive ETH, Sign and Broadcast transactions, Generate and manage
 Etheruem accounts).
-(xxi) Also send, receive, spend AHT tokens on the Ethereum Network.
-(xxii) Read blockchain and query AHT balances.
-(xxiii) Sign and broadcast transactions on Permissioned Bowhead Blockchain:
-(xxiv) Create a Health Record Registry Contract
-(xxv) Register Waves account with AHT Contract.
-(xxvi) Register the key-pair that encrypts CEU data with a Decentralized Blockchain account
+<br>(xxi) Also send, receive, spend AHT tokens on the Ethereum Network.
+<br>(xxii) Read blockchain and query AHT balances.
+<br>(xxiii) Sign and broadcast transactions on Permissioned Bowhead Blockchain:
+<br>(xxiv) Create a Health Record Registry Contract
+<br>(xxv) Register Waves account with AHT Contract.
+<br>(xxvi) Register the key-pair that encrypts CEU data with a Decentralized Blockchain account
 for receiving and trading AHT.
-(xxvii) Can query the Research Health Offer Contract hosted on the Bowhead permissioned
+<br>(xxvii) Can query the Research Health Offer Contract hosted on the Bowhead permissioned
 network filter & display offers for health data based on CEU’s profile.
-(xxviii) Query Research Health Offer Contract hosted on the Bowhead permissioned network
+<br>(xxviii) Query Research Health Offer Contract hosted on the Bowhead permissioned network
 for survey/questionnaire to be delivered to CEU.
-(xxix) Read Health Record Registry Contract.
-(xxx) Update Health Record Registry Contract.
-(xxxi) Display reminder notifications for user to complete tasks to earn ATH.
+<br>(xxix) Read Health Record Registry Contract.
+<br>(xxx) Update Health Record Registry Contract.
+<br>(xxxi) Display reminder notifications for user to complete tasks to earn ATH.
 Consumer End User perspective:
-(xxxii) Displays for the CEU categorized health records, Latest updates, Links to older versions, What is shared with whom for how long.
-(xxxiii) Poll Health Record Registry Contract for changes including updated health records, test results, diagnoses, prescriptions.
-(xxxiv) authorize a healthcare worker to view and/or update records
-(xxxv) authorize a data custodian to view and/or share records with others
-(xxxvi) Purge all data
-(xxxvii) Display remaining vitamin count in paired Bowhead Testing/Dispensing Hardware
+<br>(xxxii) Displays for the CEU categorized health records, Latest updates, Links to older versions, What is shared with whom for how long.
+<br>(xxxiii) Poll Health Record Registry Contract for changes including updated health records, test results, diagnoses, prescriptions.
+<br>(xxxiv) authorize a healthcare worker to view and/or update records
+<br>(xxxv) authorize a data custodian to view and/or share records with others
+<br>(xxxvi) Purge all data
+<br>(xxxvii) Display remaining vitamin count in paired Bowhead Testing/Dispensing Hardware
 Device
-(xxxviii)view prescriptions (xxxix)view diagnoses
+<br>(xxxviii)view prescriptions (xxxix)view diagnoses
 Researcher perspective:
-(xl) submit information for approval/permission by BNM (xli) submit new Research Health Offer Contracts
-(xlii) receive and decrypt data from participants
-(xliii) Display aggregate profile data
+<br>(xl) submit information for approval/permission by BNM (xli) submit new Research Health Offer Contracts
+<br>(xlii) receive and decrypt data from participants
+<br>(xliii) Display aggregate profile data
 
 Ethics Committee Member perspective:
-(xliv) submit ECM information for approval/permission by BNM (xlv) View Research Health Offer Contract that need ethics review (xlvi) Submit approval for a Research Health Offer Contract
-(xlvii) Submit denial for a Research Health Offer Contract
+<br>(xliv) submit ECM information for approval/permission by BNM (xlv) View Research Health Offer Contract that need ethics review (xlvi) Submit approval for a Research Health Offer Contract
+<br>(xlvii) Submit denial for a Research Health Offer Contract
 Lab perspective:
-(xlviii) submit information for approval/permission by BNM
-(xlix) send offer to Bowhead MasterNodes to process test samples
-(l) poll LAB Registry Contract for test sample data to download
-(li) confirm intent to process test samples
-(lii) download & decrypt test sample data
-(liii) encrypt & upload results
+<br>(xlviii) submit information for approval/permission by BNM
+<br>(xlix) send offer to Bowhead MasterNodes to process test samples
+<br>(l) poll LAB Registry Contract for test sample data to download
+<br>(li) confirm intent to process test samples
+<br>(lii) download & decrypt test sample data
+<br>(liii) encrypt & upload results
 Healthcare Worker perspective:
-(liv) View decrypted health records as authorized by CEU (lv) Update health records if authorized by CEU
-(lvi) Issue diagnosis / prescription
+<br>(liv) View decrypted health records as authorized by CEU (lv) Update health records if authorized by CEU
+<br>(lvi) Issue diagnosis / prescription
 Bowhead Health Consultant perspective:
 (lvii)View decrypted health records as authorized by CEU (lviii)Update health records if authorized by CEU
 (lix) Issue diagnosis / prescription
@@ -2692,196 +2692,196 @@ A complimentary implementation alternative would be a web-wallet such as MetaMas
 
 Bowhead Master Nodes are permissioned blockchain nodes, as added by the Bowhead Network Manager. During the early epoch of the Bowhead health ecosystem, in order to safeguard the security and privacy of consumer end user data, only Nodes added to the Key Management Module by the Bowhead Network Manager will be able to participate and decrypt the data within the Permissioned Blockchain. Nodes are modular in nature and can be specialized with a variety of features as described in the rest of this section. These nodes implement some form of Byzantine Fault Tolerant protocol.
 
-(i) Maintains consensus within the permissioned side of the Bowhead Blockchain network.
-(ii) Sensitive data is not permitted to leave the permissioned network unencrypted or
+<br>(i) Maintains consensus within the permissioned side of the Bowhead Blockchain network.
+<br>(ii) Sensitive data is not permitted to leave the permissioned network unencrypted or
 unanonymized/unaggregated.
-(iii) Continually scans Health Record Registry Contracts to ensure that Data past a “share
+<br>(iii) Continually scans Health Record Registry Contracts to ensure that Data past a “share
 date” is deleted from data storage nodes.
-(iv) May also run Storage Node (see below)
-(v) MayalsorunBlockchainNetworkBridge(seebelow)
-(vi) May also run Bowhead Edge Node (see below)
-(vii) Decrypts data as necessary to aggregate and analyze anonymized data, then encrypts
+<br>(iv) May also run Storage Node (see below)
+<br>(v) MayalsorunBlockchainNetworkBridge(seebelow)
+<br>(vi) May also run Bowhead Edge Node (see below)
+<br>(vii) Decrypts data as necessary to aggregate and analyze anonymized data, then encrypts
 the resulting summary using the Researcher’s public key.
-(viii) Generates a “one-time” keys that are used to encrypt data for the MasterNode to
+<br>(viii) Generates a “one-time” keys that are used to encrypt data for the MasterNode to
 decrypt and aggregate health data as needed
-(ix) MasterNodes can elect a “leader” to perform a single, atomic action off-chain.
-(x) WritesupdatestoCEU’sHealthRecordRegistryContractstonotifythemoflabresults
+<br>(ix) MasterNodes can elect a “leader” to perform a single, atomic action off-chain.
+<br>(x) WritesupdatestoCEU’sHealthRecordRegistryContractstonotifythemoflabresults
 or new health records added by practitioners.
-(xi) BMN can use Bowhead MaterNodes to deploy Smart Contracts on permissioned
+<br>(xi) BMN can use Bowhead MaterNodes to deploy Smart Contracts on permissioned
 Bowhead blockchain
-(xii) BMN can use Bowhead MaterNodes to update Smart Contracts on permissioned
+<br>(xii) BMN can use Bowhead MaterNodes to update Smart Contracts on permissioned
 Bowhead blockchain
-(xiii) deploy smart contracts on the permissioned bowhead blockchain
+<br>(xiii) deploy smart contracts on the permissioned bowhead blockchain
 
 
 ### 4.3 Storage Node
 
 
 As the name suggests, storage nodes are attached to Bowhead MasterNodes and are the main repository for large volumes of health data and records. Enables user control over their data by only retaining data as permitted by Health Record Registry Contracts, and deleting anything else. All data is encrypted.
-(i) Runs a content addressable storage service, allowing us to access (encrypted) documents by hash. Example technologies include IPFS and StorJ,
-(ii) Could be running on Bowhead MasterNodes during initial stages of the network ecosystem.
-(iii) Stores requested data by hash
-(iv) Retrieves data by hash
-(v) OnlyrespondtovalidrequestssuchascomingfromMasterNodeorauthorizedSmart
+<br>(i) Runs a content addressable storage service, allowing us to access (encrypted) documents by hash. Example technologies include IPFS and StorJ,
+<br>(ii) Could be running on Bowhead MasterNodes during initial stages of the network ecosystem.
+<br>(iii) Stores requested data by hash
+<br>(iv) Retrieves data by hash
+<br>(v) OnlyrespondtovalidrequestssuchascomingfromMasterNodeorauthorizedSmart
 Contract requests
-(vi) Deletes any data it encounters that is not authorized by a corresponding record in the
+<br>(vi) Deletes any data it encounters that is not authorized by a corresponding record in the
 Health Record Registry Contract (see below), also deletes any data that a Health Record Registry Contract has marked as “expired”
 
 
 ### 4.4 Health Record Registry Contract
 
 A registry contract running on the Bowhead permissioned blockchain which stores and manages all the health records and data related to a Consumer End User. It acts as a nexus or hub for interacting with other contracts on the Permissioned and Decentralized blockchain network segments.
-(i) Stores hashes and encrypted hashes of all records, along with category, enforcing access.
-(ii) Can update health record to point to a newer version.
-(iii) Older versions are pointed to and archived if they have not been EXPIRED.
-(iv) Associates the key-pair that encrypts CEU data with a Decentralized Blockchain account
+<br>(i) Stores hashes and encrypted hashes of all records, along with category, enforcing access.
+<br>(ii) Can update health record to point to a newer version.
+<br>(iii) Older versions are pointed to and archived if they have not been EXPIRED.
+<br>(iv) Associates the key-pair that encrypts CEU data with a Decentralized Blockchain account
 for receiving and trading AHT.
-(v) Storesaddresseswhichcandecryptthedata(andassociatedtimelimits,ifany)
-(vi) Return data requested by owner.
-(vii) Can revoke (set time limit to past i.e. EXPIRED) for any data shared with a particular
+<br>(v) Storesaddresseswhichcandecryptthedata(andassociatedtimelimits,ifany)
+<br>(vi) Return data requested by owner.
+<br>(vii) Can revoke (set time limit to past i.e. EXPIRED) for any data shared with a particular
 address for a limited time
-(viii) CEU can Authorize a Healthcare Worker to add records
-(ix) Authorized Healthcare Workers can add records
-(x) StorespublicencryptionkeyoftheassociatedCEU.
-(xi) Stores Authorized Data Custodians (ADC’s)
-(xii) ADC’s have same level of access as the CEU / owner
-(xiii) Stores device Unique ID’s i.e. device fingerprints from Bowhead Testing/Dispensing
+<br>(viii) CEU can Authorize a Healthcare Worker to add records
+<br>(ix) Authorized Healthcare Workers can add records
+<br>(x) StorespublicencryptionkeyoftheassociatedCEU.
+<br>(xi) Stores Authorized Data Custodians (ADC’s)
+<br>(xii) ADC’s have same level of access as the CEU / owner
+<br>(xiii) Stores device Unique ID’s i.e. device fingerprints from Bowhead Testing/Dispensing
 Hardware Devices that the User has paired with their Bowhead Wallet
-(xiv) Stores remaining vitamin counts from a Bowhead Testing/Dispensing Hardware Device (xv) Allow the CEU to enable automatic re-ordering vitamins if the remaining vitamin count
+<br>(xiv) Stores remaining vitamin counts from a Bowhead Testing/Dispensing Hardware Device (xv) Allow the CEU to enable automatic re-ordering vitamins if the remaining vitamin count
 falls below 20%
-(xvi) Allow the CEU to disable automatic re-ordering vitamins
-(xvii) Initiate a re-order of vitamins if the remaining vitamin count falls below 20%
-(xviii) Stores prescriptions signed by authorized HCW and BHC
-(xix) Provides confirmation that the prescription has not previously been dispensed when
+<br>(xvi) Allow the CEU to disable automatic re-ordering vitamins
+<br>(xvii) Initiate a re-order of vitamins if the remaining vitamin count falls below 20%
+<br>(xviii) Stores prescriptions signed by authorized HCW and BHC
+<br>(xix) Provides confirmation that the prescription has not previously been dispensed when
 requested by Bowhead Wallet in order to authorize the dispensing of vitamins by the
 Bowhead Testing/Dispensing Hardware Device
-(xx) Receives and stores updates from Bowhead Wallet when the prescription is filled. (xxi) Can make “expired” all data stored in Storage Nodes in response to user request to
+<br>(xx) Receives and stores updates from Bowhead Wallet when the prescription is filled. (xxi) Can make “expired” all data stored in Storage Nodes in response to user request to
 delete all data.
-(xxii) Can purge all personal data in response to a user request to delete all data.
+<br>(xxii) Can purge all personal data in response to a user request to delete all data.
 Note: the precise implementation of a payment system for vitamins will depend on Bowhead’s business model and vendor ERP vis-a-vis vitamin supply.
 
 ### 4.5 Research Health Offer Contract
 
 A contract running on the permissioned Bowhead blockchain, which encodes the details for a specific researcher offer for health data. Makes available all code, and specific parameters around the study. Must be authorized by the Ethics Committee Members before going live.
-(i) lists researcher’s offers for data
-(ii) has all required details about the offer for health data including descriptions of,
+<br>(i) lists researcher’s offers for data
+<br>(ii) has all required details about the offer for health data including descriptions of,
 questionnaire questions (if any), data requested, means of aggregation or
 anonymization, use of data, compensation terms.
-(iii) Stores the public key of a corresponding private key that will be used to decrypt data.
-(iv) Stores “one time” public key(s) that they Bowhead MasterNodes will use to decrypt the
+<br>(iii) Stores the public key of a corresponding private key that will be used to decrypt data.
+<br>(iv) Stores “one time” public key(s) that they Bowhead MasterNodes will use to decrypt the
 data for aggregation.
-(v) HoldsAHTinescrowtopayparticipants
-(vi) Specifies conditions, based on time, and/or first-come-first-served participants signing
+<br>(v) HoldsAHTinescrowtopayparticipants
+<br>(vi) Specifies conditions, based on time, and/or first-come-first-served participants signing
 up.
-(vii) Publishes requests for ethics review.
-(viii) Receives approval/disapproval from required number of ECM
+<br>(vii) Publishes requests for ethics review.
+<br>(viii) Receives approval/disapproval from required number of ECM
 
 ### 4.6 Researcher Registry Contract
 
 A contract running on the permissioned Bowhead blockchain which stores and makes available RES identity to other contracts running on the permissioned Bowhead blockchain. Identifies a researcher to the system, analogous to the Health Record Registry Contract for CEU. This must be created before a RES can interact with the Permissioned Bowhead Blockchain and thereby create offers for health data.
-(i) Associates the key-pair that decrypts RES data (as encrypted by Bowhead MasterNodes) with a Decentralized Blockchain account for receiving and trading AHT.
-(ii) Bowhead Network Manager can approve RES to post new Research Health Offer Contracts
-(iii) Contract can be queried to determine whether RES is permitted to post a new Research Health Offer Contract
+<br>(i) Associates the key-pair that decrypts RES data (as encrypted by Bowhead MasterNodes) with a Decentralized Blockchain account for receiving and trading AHT.
+<br>(ii) Bowhead Network Manager can approve RES to post new Research Health Offer Contracts
+<br>(iii) Contract can be queried to determine whether RES is permitted to post a new Research Health Offer Contract
 
 ### 4.7 LAB Registry Contract
 
 A contract running on the permissioned Bowhead blockchain which stores and makes available LAB identity to other contracts running on the permissioned Bowhead blockchain.
 
 Identifies a laboratory to the system, analogous to the Health Record Registry Contract for CEU. This must be created before a LAB can interact with the Permissioned Bowhead Blockchain and thereby accept offers to process test data.
-(i) Associates the key-pair that decrypts LAB account (as known to Bowhead MasterNodes) with a Decentralized Blockchain account for receiving and trading AHT.
-(ii) Bowhead Network Manager can approve LAB to process test samples and authorize LAB to upload results.
-(iii) Contract can be queried to determine whether LAB is authorized process test samples and authorize LAB to upload results.
-(iv) Contract can be queried by LAB to determine whether there is any test sample data (jobs) to process.
-(v) LABcanconfirmintenttoprocesstestsamplesthroughthiscontract.
+<br>(i) Associates the key-pair that decrypts LAB account (as known to Bowhead MasterNodes) with a Decentralized Blockchain account for receiving and trading AHT.
+<br>(ii) Bowhead Network Manager can approve LAB to process test samples and authorize LAB to upload results.
+<br>(iii) Contract can be queried to determine whether LAB is authorized process test samples and authorize LAB to upload results.
+<br>(iv) Contract can be queried by LAB to determine whether there is any test sample data (jobs) to process.
+<br>(v) LABcanconfirmintenttoprocesstestsamplesthroughthiscontract.
 
 ### 4.8 Health Consultant Registry Contract
 
 A contract running on the permissioned Bowhead blockchain which stores and makes available health consultant identity to other contracts running on the permissioned Bowhead blockchain. Identifies a health consultant to the system, analogous to the Health Record Registry Contract for CEU. This must be created before a BHC can interact with the Permissioned Bowhead Blockchain and thereby accept offers to diagnose patient data and sign prescriptions.
-(i) Associates the key-pair that decrypts BHC account (as known to Bowhead MasterNodes) with a Decentralized Blockchain account for receiving and trading AHT.
-(ii) Bowhead Network Manager can approve BHC to provide diagnoses and prescriptions.
-(iii) Contract can be queried to determine whether BHC is authorized to provide diagnoses
+<br>(i) Associates the key-pair that decrypts BHC account (as known to Bowhead MasterNodes) with a Decentralized Blockchain account for receiving and trading AHT.
+<br>(ii) Bowhead Network Manager can approve BHC to provide diagnoses and prescriptions.
+<br>(iii) Contract can be queried to determine whether BHC is authorized to provide diagnoses
 and prescriptions.
-(iv) Contract can be queried by BHC to determine whether there is any test sample data
+<br>(iv) Contract can be queried by BHC to determine whether there is any test sample data
 (jobs) to process.
-(v) BHCcanconfirmintenttoprocesstestsamplesthroughthiscontract.
+<br>(v) BHCcanconfirmintenttoprocesstestsamplesthroughthiscontract.
 
 ### 4.9 Ethics Committee Registry Contract
 
 A contract running on the permissioned Bowhead blockchain which stores and makes available Ethics Committee Member identity to other contracts running on the permissioned Bowhead blockchain. Identifies a health consultant to the system, analogous to the Health Record Registry Contract for CEU. This must be created before a ECM can interact with the
 Permissioned Bowhead Blockchain and thereby accept offers to view potential offers for health data, and evaluate the ethics compliance. If satisfied, the ECM can grant permission for that offer to be published.
-(i) Associates the key-pair that decrypts ECM account (as known to Bowhead MasterNodes) with a Decentralized Blockchain account for receiving and trading AHT.
-(ii) Bowhead Network Manager can approve ECM to approve/deny Research Health Offer Contract on the basis of ethics.
-(iii) Contract can be queried to determine whether ECM is authorized to approve/deny Research Health Offer Contract on the basis of ethics.
-(iv) Contract can be queried by ECM to determine whether there are any Research Health Offer Contracts to evaluate on the basis of ethics.
-(v) ECMcanconfirmintenttoevaluateaResearchHealthOfferContractthroughthis contract.
-(vi) ECM can be removed from the committee roster by the BNM
+<br>(i) Associates the key-pair that decrypts ECM account (as known to Bowhead MasterNodes) with a Decentralized Blockchain account for receiving and trading AHT.
+<br>(ii) Bowhead Network Manager can approve ECM to approve/deny Research Health Offer Contract on the basis of ethics.
+<br>(iii) Contract can be queried to determine whether ECM is authorized to approve/deny Research Health Offer Contract on the basis of ethics.
+<br>(iv) Contract can be queried by ECM to determine whether there are any Research Health Offer Contracts to evaluate on the basis of ethics.
+<br>(v) ECMcanconfirmintenttoevaluateaResearchHealthOfferContractthroughthis contract.
+<br>(vi) ECM can be removed from the committee roster by the BNM
 
 ### 4.10 AHT Contract
 
 A contract deployed on the blockchain network on which AHT are issued and traded. (Ex. Main Ethereum Public Network). Is associated with an account controlled by the Bowhead Blockchain Network Bridge. Performs all the associated functionality of AHT since the concept of AHT resides entirely within this contract. The account controlled by the Bowhead Blockchain Network Bridge will cause new tokens to be issued or escrowed as directed by the Token Distribution Oracle Process running on a Bowhead Master Node
-(i) Implements all AHT functionality, including basic ERC-20 token functionality.
-(ii) CEU can register a Waves account or wallet to transfer AHT from Waves blockchain.
-(iii) This contract has the ability to hold in escrow remaining AHT to be issued.
-(iv) This contract has the ability to Issue tokens to addresses.
-(v) ThiscontracthastheabilitytoStoreandaccessalltokenbalances.
-(vi) holds in escrow AHT that will be used to reward participants in a Research Health Offer
+<br>(i) Implements all AHT functionality, including basic ERC-20 token functionality.
+<br>(ii) CEU can register a Waves account or wallet to transfer AHT from Waves blockchain.
+<br>(iii) This contract has the ability to hold in escrow remaining AHT to be issued.
+<br>(iv) This contract has the ability to Issue tokens to addresses.
+<br>(v) ThiscontracthastheabilitytoStoreandaccessalltokenbalances.
+<br>(vi) holds in escrow AHT that will be used to reward participants in a Research Health Offer
 Contract
-(vii) When indicated by Oracle, issues a specified amount of new AHT to the specified
+<br>(vii) When indicated by Oracle, issues a specified amount of new AHT to the specified
 addresses.
-(viii) AHT Contract is connected to Oracle running on Elected Bowhead MasterNode via
+<br>(viii) AHT Contract is connected to Oracle running on Elected Bowhead MasterNode via
 Blockchain Network Bridge
-(ix) Issue AHT when transferred from Waves
-(x) IssuenewAHTasperOracleschedule
+<br>(ix) Issue AHT when transferred from Waves
+<br>(x) IssuenewAHTasperOracleschedule
 
-(xi) AHT can be directly paid to an address
-(xii) Lock/Freeze AHT tokens for a specified period (xiii) Release AHT tokens for a specified period
+<br>(xi) AHT can be directly paid to an address
+<br>(xii) Lock/Freeze AHT tokens for a specified period (xiii) Release AHT tokens for a specified period
 
 ### 4.11 Key Management Module
 
 A process running on an elected Bowhead MasterNode that is responsible for managing the keys which permit nodes to join the permissioned network.
-(i) Tracks who is permitted to join the permissioned network and who not.
-(ii) Admin users can add new MasterNode keys to include them within the permissioned
+<br>(i) Tracks who is permitted to join the permissioned network and who not.
+<br>(ii) Admin users can add new MasterNode keys to include them within the permissioned
 blockchain
-(iii) Can revoke keys, meaning do not encrypt the network data for decryption by this key.
-(iv) Encryption of the permissioned network is controlled by the Key Management Module in
+<br>(iii) Can revoke keys, meaning do not encrypt the network data for decryption by this key.
+<br>(iv) Encryption of the permissioned network is controlled by the Key Management Module in
 order to limit who is able to read the contents of the blockchain network.
 
 ### 4.12 Token Distribution Oracle Process
 
 A process running on an elected Bowhead MasterNode
-(i) Acts as a token issuing authority that mimics Bitcoin’s emission characteristics with respect to the current wall time (clock).
-(ii) Can read Researcher Registry Contract, LAB Registry Contract, Health Consultant Registry Contract, Ethics Committee Registry Contract, Research Health Offer Contract, and Health Record Registry Contracts transaction activity
-(iii) accounts for all AHT to be issued and transferred during an epoch
-(iv) monitors the time to decide when the epoch ends and to distributed AHT
-(v) MaypublishrootofMerkletree(topublicblockchainnetworksuchasEthereumMain
+<br>(i) Acts as a token issuing authority that mimics Bitcoin’s emission characteristics with respect to the current wall time (clock).
+<br>(ii) Can read Researcher Registry Contract, LAB Registry Contract, Health Consultant Registry Contract, Ethics Committee Registry Contract, Research Health Offer Contract, and Health Record Registry Contracts transaction activity
+<br>(iii) accounts for all AHT to be issued and transferred during an epoch
+<br>(iv) monitors the time to decide when the epoch ends and to distributed AHT
+<br>(v) MaypublishrootofMerkletree(topublicblockchainnetworksuchasEthereumMain
 Public Network) that stamps all the transactions happening to movements of AHT - so
 that these can be audited. Similar notion to side-channel.
-(vi) Managed by account associated with Blockchain Network Bridge.
-(vii) Can initiate a transaction on the AHT Contract which is in turn deployed on the
+<br>(vi) Managed by account associated with Blockchain Network Bridge.
+<br>(vii) Can initiate a transaction on the AHT Contract which is in turn deployed on the
 decentralized network where AHT are issued and traded
 
 ### 4.13 Blockchain Network Bridge
 
-• Bowhead permissioned MasterNode network <=> Ethereum
-• Bowhead permissioned MasterNode <=> Blockchain-based traceability and provenance
+<br>• Bowhead permissioned MasterNode network <=> Ethereum
+<br>• Bowhead permissioned MasterNode <=> Blockchain-based traceability and provenance
 network for pharmaceuticals, delivery of Bowhead Testing/Dispensing Hardware Devices Effectively have the capability to perform atomic swaps across blockchains maintaining one shared version of the truth across two blockchains. Implemented as a process that runs on an elected Bowhead MasterNode, and a Smart Contract on the decentralized blockchain account whose private keys are controlled by the Bowhead Network Bridge. Can be used to extend system functionality by interacting with other blockchains.
-(i) An elected Bowhead MasterNode will also have running a native client of the decentralized network (ex. Main Ethereum Public Network) where AHT tokens are issued and traded.
-(ii) monitors a particular Waves blockchain address for transactions
-(iii) When it notices the transaction it initiates a looks up the User’s registered Ethereum
+<br>(i) An elected Bowhead MasterNode will also have running a native client of the decentralized network (ex. Main Ethereum Public Network) where AHT tokens are issued and traded.
+<br>(ii) monitors a particular Waves blockchain address for transactions
+<br>(iii) When it notices the transaction it initiates a looks up the User’s registered Ethereum
 address (AHT contract), and broadcasts a transaction on the Ethereum network to transfer the same number of AHT held in an Ethereum Smart Contract deployed on the Ethereum Main Public Network to the Ethereum address registered by the user in step
-(iv) Verify balances on either blockchain
-(v) validateincomingtransactionsignaturesfromanypublicblockchainbeforeforwardingto
+<br>(iv) Verify balances on either blockchain
+<br>(v) validateincomingtransactionsignaturesfromanypublicblockchainbeforeforwardingto
 Bowhead MasterNode software.
 
 ### 4.14 The Bowhead Testing/Dispensing Device
 
 The Bowhead Bowhead Testing/Dispensing Hardware Device is capable of testing patients, and dispensing vitamins or other materials. Paris with the Bowhead Wallet running on a Mobile Device, and interacts with the Bowhead Blockchain through the Bowhead Wallet.
-(i) Pairs with Mobile devices running Bowhead Wallet.
-(ii) Can send test strip data to the mobile device running the Bowhead Wallet when
+<br>(i) Pairs with Mobile devices running Bowhead Wallet.
+<br>(ii) Can send test strip data to the mobile device running the Bowhead Wallet when
 requested.
-(iii) Dispense prescribed vitamins as directed over secure connection to a paired mobile
+<br>(iii) Dispense prescribed vitamins as directed over secure connection to a paired mobile
 device running the Bowhead Wallet software.
-(iv) Report the number of remaining vitamins in capsules contained within the Bowhead
+<br>(iv) Report the number of remaining vitamins in capsules contained within the Bowhead
 Testing/Dispensing Hardware Device
 
 ### 4.15 Bowhead Edge Node
@@ -2889,15 +2889,15 @@ Testing/Dispensing Hardware Device
 A module running on an elected Bowhead MasterNode, that validates transactions coming in from Bowhead Wallets. Relays replies from the Bowhead Permissioned Blockchain back to the Bowhead Wallet.
 
 Multiple bridges may exist within the ecosystem ex.: • Waves<=>Ethereum
-(i) A specialized permissioned node that relays requests between Bowhead Wallets and Bowhead MasterNodes.
-(ii) Validates the signatures of incoming transactions from off-chain to mitigate against some spam attacks.
+<br>(i) A specialized permissioned node that relays requests between Bowhead Wallets and Bowhead MasterNodes.
+<br>(ii) Validates the signatures of incoming transactions from off-chain to mitigate against some spam attacks.
 
 ### 4.16 Decentralized Nodes
 
 Blockchain nodes running a decentralized Byzantine Fault Tolerant protocol. This is a public network primarily used to provide liquid transactions for AHT once issued by the contract in response to the Token Distribution Oracle Process.
-(i) Each node implements a blockchain protocol capable of securing transactions
-(ii) Each node implements a blockchain protocol capable of issuing AHT
-(iii) Each node implements a blockchain protocol network that permits trading of AHT i.e.
+<br>(i) Each node implements a blockchain protocol capable of securing transactions
+<br>(ii) Each node implements a blockchain protocol capable of issuing AHT
+<br>(iii) Each node implements a blockchain protocol network that permits trading of AHT i.e.
 moving AHT between network addresses.
-(iv) May or may not require transaction fees (Ex. gas) depending on underlying fabric
+<br>(iv) May or may not require transaction fees (Ex. gas) depending on underlying fabric
 implementation choices.
