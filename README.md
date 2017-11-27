@@ -1,5 +1,5 @@
 ￼<h1 align="center">
-  <a href="ipfs.io">
+  <a href="https://bowheadhealth.com/">
     <img src="https://ipfs.io/ipfs/QmU2ZSzXyzVfoYLZe2hJYX4iKZBMPKGN8XQGc1afWBr6m2"  />
   </a>
 </h1>
